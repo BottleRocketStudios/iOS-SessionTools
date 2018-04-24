@@ -3,40 +3,33 @@
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'SessionTools'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SessionTools.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/earlgaspard/SessionTools'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'earlgaspard' => 'earl.gaspard@bottlerocketstudios.com' }
-  s.source           = { :git => 'https://github.com/earlgaspard/SessionTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'SessionTools/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SessionTools' => ['SessionTools/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.name             = 'SessionTools'
+    s.version          = '1.0.0'
+    s.summary          = 'Provides a simple way to make "session" objects for storing, deleting, and refreshing data. It makes dealing with logging in/out changes a whole lot easier.'
+    
+    s.description      = <<-DESC
+    Provides a simple way to create "session" objects for use in your own session manager setup. It can store, delete, and refresh any info you want. You can also broadcast notifications when your info changes.
+    DESC
+    
+    s.homepage         = 'https://github.com/BottleRocketStudios/iOS-SessionTools'
+    s.license          = { :type => 'Apache', :file => 'LICENSE' }
+    s.author           = { 'Bottle Rocket Studios' => 'earl.gaspard@bottlerocketstudios.com' }
+    s.source           = { :git => 'https://github.com/bottlerocketstudios/iOS-SessionTools.git', :tag => s.version.to_s }
+    
+    s.ios.deployment_target = '9.0'
+    s.frameworks = 'Foundation'
+    
+    s.subspec 'Base' do |base|
+        # subspec for users who don't want to use Keychain for storage
+        base.source_files = 'SessionTools/Classes/Base/*'
+    end
+    
+    s.subspec 'KeychainStorage' do |keychain|
+        keychain.dependency 'KeychainAccess'
+        s.source_files = 'SessionTools/Classes/Base/*', 'SessionTools/Classes/KeychainStorage/*'
+    end
 end

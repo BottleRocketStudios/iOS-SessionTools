@@ -5,7 +5,5 @@ target 'SessionTools_Example' do
 
   target 'SessionTools_Tests' do
     inherit! :search_paths
-
-    
   end
 end
