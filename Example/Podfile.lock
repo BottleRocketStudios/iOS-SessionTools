@@ -11,7 +11,7 @@ DEPENDENCIES:
   - SessionTools (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - KeychainAccess
 
 EXTERNAL SOURCES:
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
-  SessionTools: 4c27cf290f6b09c4271e9ccdf158734cc767356e
+  SessionTools: 2fb3504085d72ae65610e1bc579ee904fc5c4069
 
 PODFILE CHECKSUM: 92b72696fda1130a33b542328931167644f378d5
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
