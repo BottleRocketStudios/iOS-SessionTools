@@ -14,13 +14,13 @@ This library makes session management easier. There are a few main goals:
 * Store your model object in a secure storage mechanism since it usually contains sensitve information.
 
 ## Key Concepts
-* Session - A base class for creating something that can store, retrieve, and delete an item in a SessionContainer. Can post notifications by providing a NotificationPoster.
-* SessionContainer - A conatiner for storing data to the keychain.
-* Refreshable - Represents something that can be refreshable. In our use case, a Session.
-* NotficationPosting - Represents something that can post a notification.
-* UserSession - Handles storage, deletion, and retrieval of the current user. Broadcasts notifications when user session state changes. Can call a RefreshHandler block if provided.
-* KeychainStorageContainer - A container that uses the keychain as the backing store. You can make your own container by subclassing SessionContainer.
-* KeychainContainerConfig - A class to configure the KeychainStorageContainer for use.
+* **Session** - A base class for creating something that can store, retrieve, and delete an item in a `SessionContainer`. Can post notifications by providing something conforming to `NotificationPosting` (`NSNotificationCenter` conforms to this by default).
+* **SessionContainer** - A conatiner for storing data to the keychain.
+* **Refreshable** - Represents something that can be refreshable. In our use case, a `Session<T>`.
+* **NotficationPosting** - Represents something that can post a notification.
+* **UserSession** - Handles storage, deletion, and retrieval of the current user. Broadcasts notifications when user session state changes. Can call a `RefreshHandler` block if provided.
+* **KeychainStorageContainer** - A container that uses the keychain as the backing store. You can make your own container by subclassing `SessionContainer`.
+* **KeychainContainerConfig** - A class to configure the `KeychainStorageContainer` for use.
 
 ## Usage
 
