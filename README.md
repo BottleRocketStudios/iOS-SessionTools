@@ -44,10 +44,29 @@ struct Model: Codable {
 let config = KeychainContainerConfig(keychainName: "your.keychain.name")
 ```
 
-##### 3. Create a `KeychainStorageContainer `supplied with your `KeychainContainerConfig`. 
-You can also create your own object conforming to `SessionContainer` and instantiate it if you're not wanting to use the default keychain storage mechanism.
+##### 3. Create a `KeychainStorageContainer` supplied with your `KeychainContainerConfig`. 
 ``` swift
 let container = KeychainStorageContainer<Model>(config: config)
+```
+You can also create your own object conforming to `SessionContainer` and instantiate it if you're not wanting to use the default keychain storage mechanism.
+```swift
+struct MyStorageContainer: SessionContainer {
+    func hasItem(forIdentifier identifier: String) -> Bool {
+        // ...
+    }
+    
+    func item(forIdentifier identifier: String, jsonDecoder: JSONDecoder) throws -> Item? {
+        // ...
+    }
+    
+    func removeItem(forIdentifier identifier: String) throws {
+        // ...
+    }
+    
+    func storeItem(_ item: Item, forIdentifier identifier: String, jsonEncoder: JSONEncoder) throws {
+        // ...
+    }
+}
 ```
 
 ##### 4. Wrap your storage container in the `AnySessionContainer` type erased container.
@@ -60,7 +79,7 @@ let anyContainer = AnySessionContainer(container)
 ##### Option 1 - Use the `Session<T>` class as-is.
 You just need to supply your model object's type, the container to store it in, and the key that will be associated with your object in the storage container.
 ``` swift
-let session = Session<Model>(container: anyContainer, storageIdentifier: "identifier.or.key.for.your.model.object")
+let session = Session<Model>(container: anyContainer, storageIdentifier: "identifier.for.your.model.object")
 ```
 
 ##### Option 2 - Create a subclass of `Session<T>`, supplying your model for the generic placeholder type.
@@ -78,7 +97,7 @@ class ModelSession: Session<Model>, Refreshable {
 }
 ```
 
-##### Option 3 (*Most Common*) - Use `UserSession<T>`, a `Session<T>` subclass already setup for you to deal with **common log in/out operations**.
+##### Option 3 (***Most Common***) - Use `UserSession<T>`, a `Session<T>` subclass already setup for you to deal with **common log in/log out operations**.
 ``` swift
 let userSession = UserSession<Model>(container: anyContainer, storageIdentifier: "identifier.for.your.model.object", notificationPoster: NotificationCenter.default)
 ```
@@ -101,11 +120,11 @@ You can also check if there is currently a user logged in.
 let isUserLoggedIn = userSession.isLoggedIn
 ```
 
-`UserSession<T>` also contains methods that can be called to log in, log out, or update the information.
+`UserSession<T>` also contains methods that can be called to log in, log out, or update the information when you deem appropriate.
 ``` swift
 do {
     try userSession.didLogIn(model)
-    try userSession.didLogOut(nil)
+    try userSession.didLogOut(nil) // Optionally provide the error that triggered the logout
     try userSession.didUpdate(model)
 } catch {
     // Handle container read/write errors here
@@ -126,7 +145,7 @@ Access the `userSessionState` property on the notification to easily get the sta
     switch sessionState {
     case .loggedIn:
         // ...
-    case .loggedOut:
+    case .loggedOut(let error): // Optionally get a reference to the error that triggered the logout
         // ...
     case .updated:
         // ...
