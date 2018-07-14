@@ -24,9 +24,12 @@ This library makes session management easier. There are a few main goals:
 
 ## Usage
 
-### SessionTools out of the box uses the keychain to store your session data. To allow for maximum flexibility, you can use the SessionTools/Base subspec to integrate SessionTools without the keychain dependencies. Going forward, we are assuming you are using this on iOS and want to use the keychain. You'll need to create a few things before working with a Session.
+### SessionTools out of the box uses the keychain to store your session data. To allow for maximum flexibility, you can use the `SessionTools/Base` subspec to integrate SessionTools without the keychain dependencies. Going forward, we are assuming you are using this on iOS and want to use the keychain.
 
-#### 1. Create a model object that conforms to Codable.
+#### Preparation
+
+##### 1. Create a model object that conforms to `Codable`.
+You've probably already created some variation of this in your codebase.
 ``` swift
 struct Model: Codable {
     let firstName: String
@@ -36,29 +39,32 @@ struct Model: Codable {
 }
 ```
 
-#### 2. Create a KeychainContainerConfig supplied with a keychainName.
+##### 2. Create a `KeychainContainerConfig` supplied with a `keychainName`.
 ``` swift
 let config = KeychainContainerConfig(keychainName: "your.keychain.name")
 ```
 
-#### 3. Create a KeychainStorageContainer supplied with a KeychainContainerConfig. (Or create your own SessionContainer subclass and instantiate it)
+##### 3. Create a `KeychainStorageContainer `supplied with your `KeychainContainerConfig`. 
+You can also create your own object conforming to `SessionContainer` and instantiate it if you're not wanting to use the default keychain storage mechanism.
 ``` swift
 let container = KeychainStorageContainer<Model>(config: config)
 ```
 
-#### 4. Wrap your storage container in a type erased container.
+##### 4. Wrap your storage container in the `AnySessionContainer` type erased container.
 ``` swift
 let anyContainer = AnySessionContainer(container)
 ```
 
-### Now you can make use of a Session in a few different ways.
+#### Now you can make use of a `Session` in a few different ways.
 
-#### Option 1 - Use Session as is by suppling your placeholder type.
+##### Option 1 - Use the `Session<T>` class as-is.
+You just need to supply your model object's type, the container to store it in, and the key that will be associated with your object in the storage container.
 ``` swift
-let session = Session<Model>(container: anyContainer, storageIdentifier: "identifier.for.your.model.object")
+let session = Session<Model>(container: anyContainer, storageIdentifier: "identifier.or.key.for.your.model.object")
 ```
 
-#### Option 2 - Create a subclass of Session with your model as the placeholder type. Optionally, conform to Refreshable to refresh your session.
+##### Option 2 - Create a subclass of `Session<T>`, supplying your model for the generic placeholder type.
+Optionally, conform to `Refreshable` if you want to automatically handle refreshing your model when it's expired (e.g. an API token).
 ``` swift
 class ModelSession: Session<Model>, Refreshable {
     // your class code here
@@ -72,11 +78,11 @@ class ModelSession: Session<Model>, Refreshable {
 }
 ```
 
-#### Option 3 - Use UserSession, a Session already setup for you to deal with logging in/out and broadcasting notifications.
+##### Option 3 (*Most Common*) - Use `UserSession<T>`, a `Session<T>` subclass already setup for you to deal with **common log in/out operations**.
 ``` swift
 let userSession = UserSession<Model>(container: anyContainer, storageIdentifier: "identifier.for.your.model.object", notificationPoster: NotificationCenter.default)
 ```
-You can also supply a refreshHandler to UserSession to use whenever refreshing.
+You can also supply a `refreshHandler` to the UserSession initializer if you want to automatically handle refreshing your model when it's expired (e.g. an API token).
 ``` swift
 private static func userRefreshHandler(_ completion: @escaping RefreshCompletion) -> Void {
     // your refresh code
@@ -86,33 +92,45 @@ private static func userRefreshHandler(_ completion: @escaping RefreshCompletion
 let userSession = UserSession<Model>(container: container, storageIdentifier: "identifier.for.your.model.object", notificationPoster: NotificationCenter.default, refreshHandler: userRefreshHandler)
 ```
 
-Get current user info.
+Now you can easily get a reference to your app's current user.
 ``` swift
-userSession.currentUser
-userSession.isLoggedIn
+let currentUser = userSession.currentUser
+```
+You can also check if there is currently a user logged in.
+```swift
+let isUserLoggedIn = userSession.isLoggedIn
 ```
 
-Handle logging in, logging out, and updating.
+`UserSession<T>` also contains methods that can be called to log in, log out, or update the information.
 ``` swift
 do {
     try userSession.didLogIn(model)
     try userSession.didLogOut(nil)
     try userSession.didUpdate(model)
 } catch {
-    //Handle container errors here
+    // Handle container read/write errors here
 }
 ```
 
-Observe notifications.
+Parts of your code can optionally observe these log in/out/update events by subscribing to the `Notification.Name.userSessionStateDidChange` notification.
 ``` swift
 NotificationCenter.default.addObserver(self, selector: #selector(didUpdateUser:), name: .sessionStateDidChange, object: nil)
 ```
 
-Easily get the state change from the notification payload.
+Access the `userSessionState` property on the notification to easily get the state change that occurred.
 ``` swift
 @objc private func didUpdateUser(_ notification: Notification) {
     guard let sessionState = notification.userSessionState else { return }
-    //Do something with the state
+    
+    // Do something with the state
+    switch sessionState {
+    case .loggedIn:
+        // ...
+    case .loggedOut:
+        // ...
+    case .updated:
+        // ...
+    }
 }
 ```
 
