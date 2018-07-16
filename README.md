@@ -9,13 +9,13 @@
 This library makes session management easier. There are a few main goals:
 
 * Provide a simple way to create "session" objects for storing, updating, deleting, and refreshing session-related data (credentials, tokens, etc.).
-* Provide a pre-built UserSession to simplify the work needed to deal with user login/logout.
+* Provide a pre-built `UserSession` to simplify the work needed to deal with user login/logout.
 * Broadcast login/logout/update notifications when your model object changes.
-* Store your model object in a secure storage mechanism since it usually contains sensitve information.
+* Store your model object in a secure storage mechanism since it usually contains sensitive information.
 
 ## Key Concepts
-* **Session** - A base class for creating something that can store, retrieve, and delete an item in a `SessionContainer`. Can post notifications by providing something conforming to `NotificationPosting` (`NSNotificationCenter` conforms to this by default).
-* **SessionContainer** - A conatiner for storing data to the keychain.
+* **Session** - A base class for creating something that can store, retrieve, and delete an item in a `SessionContainer`. Can post notifications by providing something that conforms to `NotificationPosting` (`NotificationCenter` conforms to this by default).
+* **SessionContainer** - A container for storing data to the keychain.
 * **Refreshable** - Represents something that can be refreshable. In our use case, a `Session<T>`.
 * **NotficationPosting** - Represents something that can post a notification.
 * **UserSession** - Handles storage, deletion, and retrieval of the current user. Broadcasts notifications when user session state changes. Can call a `RefreshHandler` block if provided.
@@ -133,7 +133,7 @@ do {
 
 Parts of your code can optionally observe these log in/out/update events by subscribing to the `Notification.Name.userSessionStateDidChange` notification.
 ``` swift
-NotificationCenter.default.addObserver(self, selector: #selector(didUpdateUser:), name: .sessionStateDidChange, object: nil)
+NotificationCenter.default.addObserver(self, selector: #selector(didUpdateUser:), name: .userSessionStateDidChange, object: nil)
 ```
 
 Access the `userSessionState` property on the notification to easily get the state change that occurred.
