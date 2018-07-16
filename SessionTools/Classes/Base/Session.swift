@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// A base class for creating something that can store, retrieve, and delete an item in a SessionContainer. Can post notifications by providing a NotificationPoster.
+/// A base class for creating something that can store, retrieve, and delete an item in a `SessionContainer`. Can post notifications by providing something conforming to `NotificationPosting`.
 open class Session<T: Codable> {
     
     public let container: AnySessionContainer<T>
