@@ -46,7 +46,7 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41DF32CF4C2521FFCA5FAECCE837A71B"
+            BlueprintIdentifier = "7203F3A19B042A8FF924DF8099FBFFD1"
             BuildableName = "SessionTools.framework"
             BlueprintName = "SessionTools"
             ReferencedContainer = "container:Pods/Pods.xcodeproj">
