@@ -1,10 +1,10 @@
 PODS:
-  - KeychainAccess (3.1.0)
-  - SessionTools (1.0.0):
-    - SessionTools/Base (= 1.0.0)
-    - SessionTools/KeychainStorage (= 1.0.0)
-  - SessionTools/Base (1.0.0)
-  - SessionTools/KeychainStorage (1.0.0):
+  - KeychainAccess (3.1.1)
+  - SessionTools (1.0.2):
+    - SessionTools/Base (= 1.0.2)
+    - SessionTools/KeychainStorage (= 1.0.2)
+  - SessionTools/Base (1.0.2)
+  - SessionTools/KeychainStorage (1.0.2):
     - KeychainAccess
 
 DEPENDENCIES:
@@ -19,8 +19,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
-  SessionTools: 2fb3504085d72ae65610e1bc579ee904fc5c4069
+  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+  SessionTools: e206e7973caf690e7644a51a57b8b67c3794369a
 
 PODFILE CHECKSUM: 92b72696fda1130a33b542328931167644f378d5
 
