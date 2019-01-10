@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "SessionTools_Example.app"
-               BlueprintName = "SessionTools_Example"
-               ReferencedContainer = "container:SessionTools.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "SessionTools_Tests.xctest"
-               BlueprintName = "SessionTools_Tests"
+               BlueprintIdentifier = "12F8271821E7EA2200C8CDA4"
+               BuildableName = "SessionTools-iOSExample.app"
+               BlueprintName = "SessionTools-iOSExample"
                ReferencedContainer = "container:SessionTools.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,43 +26,15 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
-      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <CodeCoverageTargets>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7203F3A19B042A8FF924DF8099FBFFD1"
-            BuildableName = "SessionTools.framework"
-            BlueprintName = "SessionTools"
-            ReferencedContainer = "container:Pods/Pods.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SessionTools_Example.app"
-            BlueprintName = "SessionTools_Example"
-            ReferencedContainer = "container:SessionTools.xcodeproj">
-         </BuildableReference>
-      </CodeCoverageTargets>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "SessionTools_Tests.xctest"
-               BlueprintName = "SessionTools_Tests"
-               ReferencedContainer = "container:SessionTools.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SessionTools_Example.app"
-            BlueprintName = "SessionTools_Example"
+            BlueprintIdentifier = "12F8271821E7EA2200C8CDA4"
+            BuildableName = "SessionTools-iOSExample.app"
+            BlueprintName = "SessionTools-iOSExample"
             ReferencedContainer = "container:SessionTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -97,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SessionTools_Example.app"
-            BlueprintName = "SessionTools_Example"
+            BlueprintIdentifier = "12F8271821E7EA2200C8CDA4"
+            BuildableName = "SessionTools-iOSExample.app"
+            BlueprintName = "SessionTools-iOSExample"
             ReferencedContainer = "container:SessionTools.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -116,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "SessionTools_Example.app"
-            BlueprintName = "SessionTools_Example"
+            BlueprintIdentifier = "12F8271821E7EA2200C8CDA4"
+            BuildableName = "SessionTools-iOSExample.app"
+            BlueprintName = "SessionTools-iOSExample"
             ReferencedContainer = "container:SessionTools.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

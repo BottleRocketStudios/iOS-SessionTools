@@ -2,7 +2,9 @@
 
 ##### Enhancements
 
-* None.
+* Restructured project to match standard and added support for watchOS and tvOS
+  [Ryan Gant](https://github.com/ganttastic)
+  [#10](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/10)
 
 ##### Bug Fixes
 
