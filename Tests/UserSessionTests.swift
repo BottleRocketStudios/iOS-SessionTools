@@ -93,7 +93,7 @@ class UserSessionTests: XCTestCase {
         }
     }
     
-    private func refreshHandler(_ completion: @escaping RefreshCompletion) -> Void {
+    private func refreshHandler(_ completion: @escaping RefreshCompletion) {
         refreshCallCount += 1
         completion(nil)
     }

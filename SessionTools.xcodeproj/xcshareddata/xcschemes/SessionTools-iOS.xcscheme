@@ -37,17 +37,6 @@
                BlueprintName = "SessionTools-iOSTests"
                ReferencedContainer = "container:SessionTools.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "KeychainStorageContainerTests/test_KeychainStorageContainer_HasItem()">
-               </Test>
-               <Test
-                  Identifier = "KeychainStorageContainerTests/test_KeychainStorageContainer_RemovedItem()">
-               </Test>
-               <Test
-                  Identifier = "KeychainStorageContainerTests/test_KeychainStorageContainer_StoredItem()">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

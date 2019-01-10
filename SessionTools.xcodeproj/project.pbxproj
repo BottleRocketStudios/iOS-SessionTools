@@ -51,6 +51,13 @@
 			remoteGlobalIDString = 12F8270C21E7E9E400C8CDA4;
 			remoteInfo = "SessionTools-iOS";
 		};
+		12F8276521E8085200C8CDA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12F8271821E7EA2200C8CDA4;
+			remoteInfo = "SessionTools-iOSExample";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -326,6 +333,7 @@
 				12F8270921E7E9E400C8CDA4 /* Sources */,
 				12F8270A21E7E9E400C8CDA4 /* Frameworks */,
 				12F8270B21E7E9E400C8CDA4 /* Resources */,
+				12F8276421E805CD00C8CDA4 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -371,6 +379,7 @@
 			);
 			dependencies = (
 				12F8275721E7F44F00C8CDA4 /* PBXTargetDependency */,
+				12F8276621E8085200C8CDA4 /* PBXTargetDependency */,
 			);
 			name = "SessionTools-iOSTests";
 			productName = "SessionTools-iOSTests";
@@ -401,6 +410,7 @@
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 2UAV38D2MU;
 						ProvisioningStyle = Automatic;
+						TestTargetID = 12F8271821E7EA2200C8CDA4;
 					};
 				};
 			};
@@ -452,6 +462,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		12F8276421E805CD00C8CDA4 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		17A487036108BF74F2A734DA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,6 +624,11 @@
 			isa = PBXTargetDependency;
 			target = 12F8270C21E7E9E400C8CDA4 /* SessionTools-iOS */;
 			targetProxy = 12F8275621E7F44F00C8CDA4 /* PBXContainerItemProxy */;
+		};
+		12F8276621E8085200C8CDA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12F8271821E7EA2200C8CDA4 /* SessionTools-iOSExample */;
+			targetProxy = 12F8276521E8085200C8CDA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -772,6 +805,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SessionTools-iOSExample.app/SessionTools-iOSExample";
 			};
 			name = Debug;
 		};
@@ -797,6 +831,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SessionTools-iOSExample.app/SessionTools-iOSExample";
 			};
 			name = Release;
 		};
