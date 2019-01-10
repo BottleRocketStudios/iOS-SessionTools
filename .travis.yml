@@ -6,8 +6,8 @@ osx_image: xcode10.1
 language: swift
 env:
   global:
-    - WORKSPACE=Example/SessionTools.xcworkspace
-    - IOS_FRAMEWORK_SCHEME="SessionTools-Example"
+    - WORKSPACE=SessionTools.xcworkspace
+    - IOS_FRAMEWORK_SCHEME="SessionTools-iOS"
   matrix:
     - DESTINATION="platform=iOS Simulator,OS=11.3,name=iPhone X" SDK="iphonesimulator" SCHEME="$IOS_FRAMEWORK_SCHEME" RUN_TESTS="YES" POD_LINT="YES"  RUN_DANGER="YES"
 addons:
@@ -21,7 +21,7 @@ addons:
 # podfile: Example/Podfile
 before_install:
   - gem install cocoapods # Since Travis is not always on latest version
-  - pod install --project-directory=Example
+  - pod install
 script:
   - set -o pipefail
 
