@@ -30,6 +30,7 @@
 		12F8275D21E7F4B000C8CDA4 /* SessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227E5D2206EECE0000A8620 /* SessionTests.swift */; };
 		12F8275E21E7F4B000C8CDA4 /* UserSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227E5D6206EECE0000A8620 /* UserSessionTests.swift */; };
 		12F8275F21E7F4B000C8CDA4 /* MockNotificationPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120025D0207BE9B600DAE7EA /* MockNotificationPoster.swift */; };
+		12F8276221E8003700C8CDA4 /* MockStorageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F8276121E8003700C8CDA4 /* MockStorageContainer.swift */; };
 		353262E7063BBEC3790052ED /* Pods_SessionTools_iOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326B6C4F9C711D118BCDF068 /* Pods_SessionTools_iOSExample.framework */; };
 		8BC195A33E7FC36992FDC548 /* Pods_SessionTools_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E800A23F8F5D39991DF577D /* Pods_SessionTools_iOSTests.framework */; };
 		B9D1FAFC8FBB5938F1B6D975 /* Pods_SessionTools_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2446606CC9FEE19B7D9E37F /* Pods_SessionTools_iOS.framework */; };
@@ -92,6 +93,7 @@
 		12F8272D21E7EAC300C8CDA4 /* SessionTools_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionTools_iOS.h; sourceTree = "<group>"; };
 		12F8275021E7F44F00C8CDA4 /* SessionTools-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SessionTools-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F8275421E7F44F00C8CDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12F8276121E8003700C8CDA4 /* MockStorageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorageContainer.swift; sourceTree = "<group>"; };
 		298A1A13F8FD5B0CD137E226 /* Pods_SessionTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E49D3627942B3299358EE63 /* Pods-SessionTools-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOS/Pods-SessionTools-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		326B6C4F9C711D118BCDF068 /* Pods_SessionTools_iOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_iOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,6 +243,16 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		12F8276321E801EF00C8CDA4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6227E5D5206EECE0000A8620 /* MockSession.swift */,
+				120025D0207BE9B600DAE7EA /* MockNotificationPoster.swift */,
+				12F8276121E8003700C8CDA4 /* MockStorageContainer.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -268,11 +280,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6227E5D5206EECE0000A8620 /* MockSession.swift */,
+				12F8276321E801EF00C8CDA4 /* Mocks */,
 				6227E5D3206EECE0000A8620 /* KeychainStorageContainerTests.swift */,
 				6227E5D2206EECE0000A8620 /* SessionTests.swift */,
 				6227E5D6206EECE0000A8620 /* UserSessionTests.swift */,
-				120025D0207BE9B600DAE7EA /* MockNotificationPoster.swift */,
 				12F8275421E7F44F00C8CDA4 /* Info.plist */,
 			);
 			path = Tests;
@@ -567,6 +578,7 @@
 				12F8275D21E7F4B000C8CDA4 /* SessionTests.swift in Sources */,
 				12F8275B21E7F4B000C8CDA4 /* MockSession.swift in Sources */,
 				12F8275C21E7F4B000C8CDA4 /* KeychainStorageContainerTests.swift in Sources */,
+				12F8276221E8003700C8CDA4 /* MockStorageContainer.swift in Sources */,
 				12F8275E21E7F4B000C8CDA4 /* UserSessionTests.swift in Sources */,
 				12F8275F21E7F4B000C8CDA4 /* MockNotificationPoster.swift in Sources */,
 			);
