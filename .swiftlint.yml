@@ -3,12 +3,6 @@ line_length: 245
 
 disabled_rules:
   - trailing_whitespace # Disables SwiftLint complaining about whitespace characters on empty lines
-  - todo # Disables auto-warning of TODO statements
-
-identifier_name:
-  excluded:
-    - id
-    - ok
 
 excluded:
   - Pods

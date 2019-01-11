@@ -4,7 +4,7 @@
 
 * Restructured project to match standard and added SwiftLint
   [Ryan Gant](https://github.com/ganttastic)
-  [#14](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/10)
+  [#14](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/14)
 
 ##### Bug Fixes
 
