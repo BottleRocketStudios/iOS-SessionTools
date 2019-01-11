@@ -10,6 +10,9 @@ env:
     - IOS_FRAMEWORK_SCHEME="SessionTools-iOS"
   matrix:
     - DESTINATION="platform=iOS Simulator,OS=11.3,name=iPhone X" SDK="iphonesimulator" SCHEME="$IOS_FRAMEWORK_SCHEME" RUN_TESTS="YES" POD_LINT="YES"  RUN_DANGER="YES"
+cache:
+  directories:
+    - ~/.danger-swift
 addons:
   homebrew:
     update: true
