@@ -21,7 +21,7 @@ class MockNotificationPoster: NotificationPosting {
         switch sessionState {
         case .loggedIn:
             loginNotificationReceived = true
-        case .loggedOut(_):
+        case .loggedOut:
             logoutNotificationReceived = true
         case .updated:
             updatedNotificationReceived = true

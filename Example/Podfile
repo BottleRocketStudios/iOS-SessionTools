@@ -1,9 +1,0 @@
-use_frameworks!
-
-target 'SessionTools_Example' do
-  pod 'SessionTools', :path => '../'
-
-  target 'SessionTools_Tests' do
-    inherit! :search_paths
-  end
-end

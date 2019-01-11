@@ -49,7 +49,7 @@ class SessionManager {
     }
     
     /// A refresh handler for the userSession
-    private static func userRefreshHandler(_ completion: @escaping RefreshCompletion) -> Void {
+    private static func userRefreshHandler(_ completion: @escaping RefreshCompletion) {
         completion(nil)
     }
     

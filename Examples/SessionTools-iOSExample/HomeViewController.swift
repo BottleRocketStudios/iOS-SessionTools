@@ -58,7 +58,7 @@ class HomeViewController: UIViewController {
         switch sessionState {
         case .loggedIn:
             debugPrint("User logged in")
-        case .loggedOut(_):
+        case .loggedOut:
             debugPrint("User logged out")
         case .updated:
             debugPrint("User updated")

@@ -11,9 +11,8 @@ import XCTest
 class UserSessionTests: XCTestCase {
     
     private let storageIdentifier = "userSessionStorageIdentifier"
-    private let config = KeychainContainerConfig(keychainName: "com.test.usersession")
     private let user = MockUser(name: "testName", token: "12345")
-    private var container: KeychainStorageContainer<MockUser>?
+    private var container: MockStorageContainer<MockUser>?
     private var userSession: UserSession<MockUser>?
     private var refreshCallCount = 0
     private var notificationPoster: MockNotificationPoster?
@@ -23,7 +22,7 @@ class UserSessionTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        container = KeychainStorageContainer<MockUser>(config: config)
+        container = MockStorageContainer<MockUser>()
         let anyContainer = AnySessionContainer(container!)
         notificationPoster = MockNotificationPoster()
         userSession = UserSession<MockUser>(container: anyContainer, storageIdentifier: storageIdentifier, notificationPoster: notificationPoster!)
@@ -94,7 +93,7 @@ class UserSessionTests: XCTestCase {
         }
     }
     
-    private func refreshHandler(_ completion: @escaping RefreshCompletion) -> Void {
+    private func refreshHandler(_ completion: @escaping RefreshCompletion) {
         refreshCallCount += 1
         completion(nil)
     }
