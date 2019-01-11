@@ -23,13 +23,14 @@ before_install:
   - gem install cocoapods # Since Travis is not always on latest version
   - pod install
 script:
+  - swiftlint
   - set -o pipefail
 
   # Build Framework and Run Tests if specified
   - if [ $RUN_TESTS == "YES" ]; then
-      xcodebuild test -enableCodeCoverage YES -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -sdk "$SDK" ONLY_ACTIVE_ARCH=NO | xcpretty;
+      xcodebuild test -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO -enableCodeCoverage YES | xcpretty;
     else
-      xcodebuild build -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" -sdk "$SDK" ONLY_ACTIVE_ARCH=NO | xcpretty;
+      xcodebuild build -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO | xcpretty;
     fi
 
   # Run `pod lib lint` if specified
@@ -41,8 +42,8 @@ script:
   - if [ $RUN_DANGER == "YES" ]; then
       DEBUG='*' danger-swift ci;
     fi
-# after_success:
- # - bash <(curl -s https://codecov.io/bash)
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
 # references:
 # * http://www.objc.io/issue-6/travis-ci.html
