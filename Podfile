@@ -16,7 +16,7 @@ target 'SessionTools-iOS' do
   end
 end
 
-target 'SessionTools-watchOSExample' do
+target 'SessionTools-watchOSExampleExtension' do
     platform :watchos, '2.0'
     #no pods here
 end
