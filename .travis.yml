@@ -6,6 +6,12 @@ osx_image: xcode10.1
 language: swift
 env:
   global:
+    # added these lines to fix bug in pod lib lint that causes an error (fixed in Pod 1.6.0B1)
+    # https://github.com/CocoaPods/CocoaPods/issues/7708
+    - EXPANDED_CODE_SIGN_IDENTITY=""
+    - EXPANDED_CODE_SIGN_IDENTITY_NAME=""
+    - EXPANDED_PROVISIONING_PROFILE=""
+    
     - WORKSPACE=SessionTools.xcworkspace
     - IOS_FRAMEWORK_SCHEME=SessionTools-iOS
     - TVOS_FRAMEWORK_SCHEME=SessionTools-tvOS
