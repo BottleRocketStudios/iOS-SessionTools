@@ -37,3 +37,14 @@ target 'SessionTools-tvOS' do
     
     pod 'KeychainAccess'
 end
+
+target 'SessionTools-macOS' do
+    platform :macos, '10.9'
+    
+    pod 'KeychainAccess'
+end
+
+target 'SessionTools-macOSExample' do
+    platform :macos, '10.9'
+    #no pods here
+end

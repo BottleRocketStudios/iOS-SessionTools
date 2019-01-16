@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  SessionTools-tvOSExample
 //
-//  Created by Ryan Gant on 1/14/19.
-//  Copyright © 2019 CocoaPods. All rights reserved.
+//  Copyright (c) 2019 Bottle Rocket Studios. All rights reserved.
 //
 
 import UIKit

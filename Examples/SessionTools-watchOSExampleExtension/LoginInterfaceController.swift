@@ -2,8 +2,7 @@
 //  LoginInterfaceController.swift
 //  SessionTools-watchOSExample Extension
 //
-//  Created by Ryan Gant on 1/15/19.
-//  Copyright © 2019 CocoaPods. All rights reserved.
+//  Copyright (c) 2019 Bottle Rocket Studios. All rights reserved.
 //
 
 import WatchKit

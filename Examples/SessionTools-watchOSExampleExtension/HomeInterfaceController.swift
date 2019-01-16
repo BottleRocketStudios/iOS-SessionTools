@@ -2,7 +2,7 @@
 //  HomeInterfaceController.swift
 //  SessionTools-watchOSExample Extension
 //
-//  Copyright © 2019 Bottle Rocket Studios. All rights reserved.
+//  Copyright (c) 2019 Bottle Rocket Studios. All rights reserved.
 //
 
 import WatchKit
