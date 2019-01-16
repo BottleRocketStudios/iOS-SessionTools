@@ -17,8 +17,6 @@ env:
   - TVOS_FRAMEWORK_SCHEME=SessionTools-tvOS
   - WATCHOS_FRAMEWORK_SCHEME=SessionTools-watchOS
   - MACOS_FRAMEWORK_SCHEME=SessionTools-macOS
-  - secure: zyruio8Ly43PW0AfgT75gG7iDKW0dUPIQQtSDLbqJtohGeoKURlqKpOW1pyNamNCyb+3Xe0z6SCplFeIf4T1nR4pTTOHrCZE9C+5QxrpTMSiGZgsnQB04VpBVtDMA1uOXMbJmN9VfqmDxmMyGT119YQ34qiT8jE4OZZrW1hanLlvz8+n3lZO4o72IG+XO2avMOKMS7NSJiuefja1olqPUIxqVy246v1X7iTv8kS4mH3CIP8rCooMuVZmL5Komh5dx1rqhuLwuc/5sBrB8uWGlH/k9FIRnfB0eEP8VpPlSZ1bWN9dbSSxM/d9qJgmnCxM0rXJySr+RG0m0tbld2ShnFjhQUIA9pRTJxLP/3dgrF2FLiq29ldvqv/Zauvji0yohy63ajP+Os76369r1UmzX0QhpUUyx3UkJ4VXeJLnYZXsmmngnXrgQNpeSSJw4aRSCsczk4bHJxximJNLl7wZV/DkmCCtwlsfeuoRxjHbe5rRqvV6KVl1R+rEBQSOFliroQFMw/VT1iJTxFCNw492DKeDjI6LJ57BjkqrwUKfqyJ6H4rgof9EnBLdNnf8echki+WSKXOEpYt+OhtISaAXesHEyrO1ro8g0fVCHqPbdWWYY00eYhwE2MwbzOe4F5I5C08Bdf678rMElMSDziqNR03SuTaRV8ry+uY9020sp50=
-  - secure: GMHbfn7NlX76+3GYgJydhKnDy837OCAUX+5L1thrA2XaHMqwQR34TY0eypT91es+X6dOs6MXFV6TeyMpyBYB5ILjcjLstrPPEg2CK3KOlrFQE2LSYbLPNJ8cVDgbtxvlSI4D+gA/KFGflNQxA8D8LEEKDvzkclx+nhq6Z4Tw91Qr3ZHXEVqDq6py6UE207GPGrcVUnn+Lz5V8v96Ddt3tpr1B58oga8ykBYFmRGsEnLCeKeVu7+gWxyrTs/jyAAcCkYL05PMs3veoydUL0+fKC3X7pOLrJhxZqHvzbFagLw2AxttxGsLvTJK83zTouaj+CT1SiJbepziU3N7wuJGXDNvmUhsNdBtPbPjwE6ePcwbFSbqnUZLHPoG0fUx9U2bHM5aXwg80yc+kBDc/oUtJuc1+ojCDXKjibM5e+yOMTiOrFzEb3F7TUVPpkXxTQSQ7I0StVGoRsThr45X8rG/jO8B09mSnMGvMdqmLsTliaXjk5s4CF6TZDtR0qsugi+GC0P1VCdOot8WenwcG8oN22BTPJgwpNX5dwwXRUmcjxbENHU3V9Elrr6K8uURFZbXoKpBrcE6AQHi5uWdvjcii0U9WO+CpN/EMIZnnVfK5xVFqZqedteahDcTZQwMGWWwqNLdHK3cSFjIIrKMIE48pLY9HR50WiL9rIwXhUdWAmE=
   matrix:
   - DESTINATION="platform=iOS Simulator,OS=11.2,name=iPhone X"                        SCHEME="$IOS_FRAMEWORK_SCHEME"      RUN_TESTS="YES" POD_LINT="YES"  RUN_DANGER="YES"
   - DESTINATION="platform=tvOS Simulator,OS=11.2,name=Apple TV 4K"                    SCHEME="$TVOS_FRAMEWORK_SCHEME"     RUN_TESTS="NO"  POD_LINT="NO"   RUN_DANGER="NO"
@@ -34,25 +32,17 @@ addons:
     - danger/tap
     packages:
     - danger-swift
-before_script:
-# decrypt dev certificate
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/MacDev.p12.enc -d -a -out scripts/certs/MacDev.p12
-# add to keychain
-- ./scripts/add-key.sh
 before_install:
 - gem install cocoapods
 - pod install
 script:
 - swiftlint
 - set -o pipefail
+- if [ $RUN_DANGER == "YES" ]; then DEBUG='*' danger-swift ci; fi
 - if [ $RUN_TESTS == "YES" ]; then xcodebuild test -workspace "$WORKSPACE" -scheme
   "$SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO -enableCodeCoverage YES
   | xcpretty; else xcodebuild build -workspace "$WORKSPACE" -scheme "$SCHEME" -destination
   "$DESTINATION" ONLY_ACTIVE_ARCH=NO | xcpretty; fi
 - if [ $POD_LINT == "YES" ]; then pod lib lint --allow-warnings; fi
-- if [ $RUN_DANGER == "YES" ]; then DEBUG='*' danger-swift ci; fi
 after_success:
 - bash <(curl -s https://codecov.io/bash)
-after_script:
-# remove keychain
-- ./scripts/remove-key.sh
