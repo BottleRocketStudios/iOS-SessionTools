@@ -38,11 +38,18 @@ before_install:
 script:
 - swiftlint
 - set -o pipefail
+
+# Run Danger
 - if [ $RUN_DANGER == "YES" ]; then DEBUG='*' danger-swift ci; fi
-- if [ $RUN_TESTS == "YES" ]; then xcodebuild test -workspace "$WORKSPACE" -scheme
-  "$SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO -enableCodeCoverage YES
-  | xcpretty; else xcodebuild build -workspace "$WORKSPACE" -scheme "$SCHEME" -destination
-  "$DESTINATION" ONLY_ACTIVE_ARCH=NO | xcpretty; fi
+
+#Run the podspec linter
 - if [ $POD_LINT == "YES" ]; then pod lib lint --allow-warnings; fi
+
+#Run tests or build
+- if [ $RUN_TESTS == "YES" ]; then
+    xcodebuild test -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO -enableCodeCoverage YES| xcpretty;
+  else
+    xcodebuild build -workspace "$WORKSPACE" -scheme "$SCHEME" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO | xcpretty;
+  fi
 after_success:
 - bash <(curl -s https://codecov.io/bash)
