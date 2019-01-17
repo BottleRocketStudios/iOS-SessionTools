@@ -4,6 +4,8 @@
 [![Version](https://img.shields.io/cocoapods/v/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
 [![License](https://img.shields.io/cocoapods/l/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
 [![Platform](https://img.shields.io/cocoapods/p/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
+[![codecov](https://codecov.io/gh/BottleRocketStudios/iOS-SessionTools/branch/master/graph/badge.svg)](https://codecov.io/gh/BottleRocketStudios/iOS-SessionTools)
+[![codebeat badge](https://codebeat.co/badges/296d63cb-ed54-4fae-bedb-65562b6b08d6)](https://codebeat.co/projects/github-com-bottlerocketstudios-ios-sessiontools-master)
 
 ## Purpose
 This library makes session management easier. There are a few main goals:
@@ -47,7 +49,7 @@ The default container configuration uses an unmanaged keychain. This means you w
 let config = KeychainContainerConfig(keychainName: "your.keychain.name")
 ```
 
-If you only want the session to hang around for the current installation, change the lifecycle to KeychainLifecycle.currentInstall() and pass in an installation identifier. This identifier should remain stable between installations.
+If you only want the session to hang around for the current installation, change the lifecycle to `KeychainLifecycle.currentInstall()` and pass in an installation identifier. This identifier should remain stable between installations.
 
 ``` swift
 let managedConfig = KeychainContainerConfig(keychainName: "com.app.name", lifecycle: .currentInstall(identifier: installationIdentifier))

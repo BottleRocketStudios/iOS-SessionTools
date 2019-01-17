@@ -10,11 +10,11 @@ import KeychainAccess
 
 /// The lifecycle of the keychain item added
 public enum KeychainLifecycle: Equatable {
-    //Default - it's up to you and the OS rules to define when this item is deleted
+    /// Default case - it's up to you and the OS rules to define when this session is deleted
     case unmanaged
     
-    //The key will only live in the current installation - a delete and reinstall will make this item unreachable
-    //Indentifier should remain stable between installations
+    /// The session will only live in the current installation - a delete and reinstall will make this item unreachable.
+    /// - identifier: A unique identifier for the installation. It should remain stable between installations.
     case currentInstall(identifier: String)
 }
 
@@ -22,7 +22,7 @@ public enum KeychainLifecycle: Equatable {
 public struct KeychainContainerConfig: Equatable {
     let keychainName: String
     let accessGroupName: String?
-    let keychainLifeCycle: KeychainLifecycle
+    let keychainLifecycle: KeychainLifecycle
     
     public init(keychainName: String, accessGroupName: String? = nil, lifecycle: KeychainLifecycle = .unmanaged) {
         let internalKeychainName: String
@@ -30,14 +30,14 @@ public struct KeychainContainerConfig: Equatable {
         case .currentInstall(let installationIdentifier):
             //If we're using an install lifecycle, append the install ID to the keychain name
             internalKeychainName = installationIdentifier + keychainName
-        default:
+        case .unmanaged:
             //Otherwise, just set the name as it's unmanaged
             internalKeychainName = keychainName
         }
         
         self.keychainName = internalKeychainName
         self.accessGroupName = accessGroupName
-        self.keychainLifeCycle = lifecycle
+        self.keychainLifecycle = lifecycle
     }
 }
 
