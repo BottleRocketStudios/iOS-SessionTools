@@ -40,8 +40,17 @@ struct Model: Codable {
 ```
 
 ##### 2. Create a `KeychainContainerConfig` supplied with a `keychainName`.
+
+The default container configuration uses an unmanaged keychain. This means you will be responsible for removing this session when you're finished.
+
 ``` swift
 let config = KeychainContainerConfig(keychainName: "your.keychain.name")
+```
+
+If you only want the session to hang around for the current installation, change the lifecycle to KeychainLifecycle.currentInstall() and pass in an installation identifier. This identifier should remain stable between installations.
+
+``` swift
+let managedConfig = KeychainContainerConfig(keychainName: "com.app.name", lifecycle: .currentInstall(identifier: installationIdentifier))
 ```
 
 ##### 3. Create a `KeychainStorageContainer` supplied with your `KeychainContainerConfig`. 
