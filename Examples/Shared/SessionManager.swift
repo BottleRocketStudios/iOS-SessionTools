@@ -18,6 +18,8 @@ struct User: Codable {
 /// Manages your sessions.
 class SessionManager {
     
+    private let installationIdentifierKey = "installID"
+    
     // MARK: - Singleton
     
     static let shared = SessionManager()
@@ -34,11 +36,23 @@ class SessionManager {
     // MARK: - Private
     
     private init() {
+        //Generate or find installation identifier
+        let defaults = UserDefaults.standard
+        let installationIdentifier: String
+        if let installID = defaults.string(forKey: installationIdentifierKey) {
+            installationIdentifier = installID
+        } else {
+            let installID = NSUUID().uuidString
+            defaults.set(installID, forKey: installationIdentifierKey)
+            installationIdentifier = installID
+        }
+        
         // Setup container config for all keychain containers
-        let containerConfig = KeychainContainerConfig(keychainName: "com.app.name")
+        let containerConfig = KeychainContainerConfig(keychainName: "com.app.name", lifecycle: .unmanaged)
+        let managedContainerConfig = KeychainContainerConfig(keychainName: "com.app.name", lifecycle: .currentInstall(identifier: installationIdentifier))
 
         // Setup userSession
-        let userContainer = KeychainStorageContainer<User>(config: containerConfig)
+        let userContainer = KeychainStorageContainer<User>(config: managedContainerConfig)
         let anyUserContainer = AnySessionContainer(userContainer)
         userSession = UserSession(container: anyUserContainer, storageIdentifier: "userStorageIdentifier", notificationPoster: NotificationCenter.default, refreshHandler: SessionManager.userRefreshHandler)
         
@@ -59,9 +73,11 @@ class SessionManager {
         //Saves user object to container
         try? userSession.userDidLogIn(user)
         
-        //Add an example session model when we log in as well to save it to the container
-        let exampleModel = ExampleModel(identifier: "Example", numberOfTimesRefreshed: 0)
-        try? exampleSession.updateItem(exampleModel)
+        //Add an example session model when we log in as well to save it to the container (if we don't already have one)
+        if !exampleSession.hasItem {
+            let exampleModel = ExampleModel(identifier: "Example", numberOfTimesRefreshed: 0)
+            try? exampleSession.updateItem(exampleModel)
+        }
     }
     
     func userDidLogOut() {

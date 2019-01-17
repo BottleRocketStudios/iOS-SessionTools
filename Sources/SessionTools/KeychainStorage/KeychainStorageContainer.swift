@@ -8,14 +8,36 @@
 import Foundation
 import KeychainAccess
 
+/// The lifecycle of the keychain item added
+public enum KeychainLifecycle: Equatable {
+    //Default - it's up to you and the OS rules to define when this item is deleted
+    case unmanaged
+    
+    //The key will only live in the current installation - a delete and reinstall will make this item unreachable
+    //Indentifier should remain stable between installations
+    case currentInstall(identifier: String)
+}
+
 /// A config for creating a name to use for a 'Keychain' instance.
 public struct KeychainContainerConfig: Equatable {
     let keychainName: String
     let accessGroupName: String?
+    let keychainLifeCycle: KeychainLifecycle
     
-    public init(keychainName: String, accessGroupName: String? = nil) {
-        self.keychainName = keychainName
+    public init(keychainName: String, accessGroupName: String? = nil, lifecycle: KeychainLifecycle = .unmanaged) {
+        let internalKeychainName: String
+        switch lifecycle {
+        case .currentInstall(let installationIdentifier):
+            //If we're using an install lifecycle, append the install ID to the keychain name
+            internalKeychainName = installationIdentifier + keychainName
+        default:
+            //Otherwise, just set the name as it's unmanaged
+            internalKeychainName = keychainName
+        }
+        
+        self.keychainName = internalKeychainName
         self.accessGroupName = accessGroupName
+        self.keychainLifeCycle = lifecycle
     }
 }
 
