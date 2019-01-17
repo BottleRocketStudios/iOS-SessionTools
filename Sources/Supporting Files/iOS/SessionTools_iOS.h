@@ -2,8 +2,7 @@
 //  SessionTools_iOS.h
 //  SessionTools-iOS
 //
-//  Created by Ryan Gant on 1/10/19.
-//  Copyright © 2019 CocoaPods. All rights reserved.
+//  Copyright (c) 2019 Bottle Rocket Studios. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

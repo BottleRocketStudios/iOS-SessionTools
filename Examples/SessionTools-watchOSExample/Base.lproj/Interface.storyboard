@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="HomeInterfaceController" title="Home" id="AgC-eL-Hgc" customClass="HomeInterfaceController" customModule="SessionTools_watchOSExampleExtension">
+                    <items>
+                        <label alignment="left" text="Label" id="ZWf-rN-YEo"/>
+                        <button width="1" alignment="left" title="Refresh" id="RZW-4p-XJ9">
+                            <connections>
+                                <action selector="refreshButtonTapped" destination="AgC-eL-Hgc" id="ZIh-CS-WU1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Login" id="kYf-TV-vgo">
+                            <connections>
+                                <action selector="loginButtonTapped" destination="AgC-eL-Hgc" id="GDI-vl-Qta"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="helloLabel" destination="ZWf-rN-YEo" id="Uh1-lT-TJh"/>
+                        <outlet property="loginButton" destination="kYf-TV-vgo" id="zhC-RA-l5I"/>
+                        <outlet property="refreshButton" destination="RZW-4p-XJ9" id="gGl-9z-vbb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-95" y="-56"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="L4V-v3-EaI">
+            <objects>
+                <controller identifier="LoginInterfaceController" title="Login" id="97j-er-oMK" customClass="LoginInterfaceController" customModule="SessionTools_watchOSExampleExtension">
+                    <items>
+                        <label alignment="left" text="Username: test" id="Rwl-Dx-Yjo"/>
+                        <label alignment="left" text="Password: test" id="Zpo-N3-qJr"/>
+                        <button width="1" alignment="left" title="Login" id="agA-ke-hEn">
+                            <connections>
+                                <action selector="logMeInButtonTapped" destination="97j-er-oMK" id="Dpg-nG-Dgf"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-98" y="218"/>
+        </scene>
+        <!--Refresh-->
+        <scene sceneID="j0Q-aa-bnX">
+            <objects>
+                <controller identifier="RefreshInterfaceController" title="Refresh" id="71w-Zv-1Tu" customClass="RefreshInterfaceController" customModule="SessionTools_watchOSExampleExtension">
+                    <items>
+                        <button width="1" alignment="left" title="Refresh UserSession" id="DIL-PG-FS4">
+                            <connections>
+                                <action selector="refreshUserButtonTapped" destination="71w-Zv-1Tu" id="abb-p3-rIf"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Refresh ExampleSession" id="xMy-VZ-As3">
+                            <connections>
+                                <action selector="refreshExampleModelButtonTapped" destination="71w-Zv-1Tu" id="mpQ-be-G9d"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Refresh All" id="yOS-kC-lBa">
+                            <connections>
+                                <action selector="refreshAllButtonTapped" destination="71w-Zv-1Tu" id="R4M-65-9oU"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Close" id="qkZ-hf-s2t">
+                            <connections>
+                                <action selector="closeButtonTapped" destination="71w-Zv-1Tu" id="UFQ-sA-GHv"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-95" y="499"/>
+        </scene>
+    </scenes>
+</document>

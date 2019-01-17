@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="SessionTools_tvOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b7-fD-kbZ">
+                                <rect key="frame" x="914" y="517" width="93" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="sca-Pw-kRy">
+                                <rect key="frame" x="854" y="754" width="213" height="216"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVL-Sa-g7c">
+                                        <rect key="frame" x="0.0" y="0.0" width="213" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Refresh"/>
+                                        <connections>
+                                            <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Cop-H2-1N4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXr-k6-scY">
+                                        <rect key="frame" x="0.0" y="130" width="213" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="C2J-TQ-NZp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sca-Pw-kRy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U4e-SZ-ckf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sca-Pw-kRy" secondAttribute="bottom" constant="50" id="Zef-t0-nhk"/>
+                            <constraint firstItem="9b7-fD-kbZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lD2-Gq-4M6"/>
+                            <constraint firstItem="9b7-fD-kbZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rsr-RU-u9X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="9b7-fD-kbZ" id="w2Y-rp-IxA"/>
+                        <outlet property="loginButton" destination="OXr-k6-scY" id="1J6-XB-eZ6"/>
+                        <outlet property="refreshButton" destination="CVL-Sa-g7c" id="8og-Qh-G0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-540"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="sTk-Iw-4w0">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Qsc-3X-gn3" customClass="LoginViewController" customModule="SessionTools_tvOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FTX-Mp-nDf"/>
+                        <viewControllerLayoutGuide type="bottom" id="U19-UN-P2D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HoU-16-ndP">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="rVN-6b-H8x">
+                                <rect key="frame" x="760" y="407" width="400" height="266"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGs-7W-IVI">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="46"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="neZ-pV-9Y8">
+                                        <rect key="frame" x="0.0" y="90" width="400" height="46"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5m-9w-ln8">
+                                        <rect key="frame" x="0.0" y="180" width="400" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="logMeInButtonTapped:" destination="Qsc-3X-gn3" eventType="primaryActionTriggered" id="OJ0-Hv-eE4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="wFH-AN-aKC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rVN-6b-H8x" firstAttribute="centerY" secondItem="HoU-16-ndP" secondAttribute="centerY" id="3Pz-cY-gtB"/>
+                            <constraint firstItem="rVN-6b-H8x" firstAttribute="centerX" secondItem="HoU-16-ndP" secondAttribute="centerX" id="jRR-kR-u9P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hxj-Il-JS1"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="neZ-pV-9Y8" id="ZWd-0L-MSF"/>
+                        <outlet property="usernameTextField" destination="vGs-7W-IVI" id="n2J-xz-RIy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zLh-WE-Vei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="667"/>
+        </scene>
+        <!--Refresh View Controller-->
+        <scene sceneID="pQs-BF-U1I">
+            <objects>
+                <viewController storyboardIdentifier="RefreshViewController" id="MiR-c5-LbH" customClass="RefreshViewController" customModule="SessionTools_tvOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="96P-bM-3cu"/>
+                        <viewControllerLayoutGuide type="bottom" id="2nV-Rz-3pO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7i8-TB-P9p">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="GoM-6P-kTK">
+                                <rect key="frame" x="710" y="302" width="501" height="476"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fS-Ir-fcn">
+                                        <rect key="frame" x="0.0" y="0.0" width="501" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Refresh UserSession"/>
+                                        <connections>
+                                            <action selector="refreshUserButtonTapped:" destination="MiR-c5-LbH" eventType="primaryActionTriggered" id="IUc-S3-vr0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbT-8K-ChX">
+                                        <rect key="frame" x="0.0" y="130" width="501" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Refresh ExampleSession"/>
+                                        <connections>
+                                            <action selector="refreshExampleModelButtonTapped:" destination="MiR-c5-LbH" eventType="primaryActionTriggered" id="iBk-Oh-AI0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5r-fd-7z4">
+                                        <rect key="frame" x="0.0" y="260" width="501" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Refresh All"/>
+                                        <connections>
+                                            <action selector="refreshAllButtonTapped:" destination="MiR-c5-LbH" eventType="primaryActionTriggered" id="Aip-3a-1xj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAo-oC-unN">
+                                        <rect key="frame" x="0.0" y="390" width="501" height="86"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Close"/>
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="MiR-c5-LbH" eventType="primaryActionTriggered" id="swW-xA-P7Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="GoM-6P-kTK" firstAttribute="centerY" secondItem="7i8-TB-P9p" secondAttribute="centerY" id="gr9-Bw-HLS"/>
+                            <constraint firstItem="GoM-6P-kTK" firstAttribute="centerX" secondItem="7i8-TB-P9p" secondAttribute="centerX" id="rAt-nQ-xhe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zu0-fU-thF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T1a-mv-Wah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="1989"/>
+        </scene>
+    </scenes>
+</document>

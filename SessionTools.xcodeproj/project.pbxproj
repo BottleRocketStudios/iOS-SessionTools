@@ -7,6 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1219095821EE669000CF7421 /* SessionTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C9DEBD21ED3C4D00233C1B /* SessionTools.framework */; };
+		1219095921EE669000CF7421 /* SessionTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12C9DEBD21ED3C4D00233C1B /* SessionTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		123690C721EE8ABA007EC4DB /* KeychainStorageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826EE21E7E98300C8CDA4 /* KeychainStorageContainer.swift */; };
+		123690C821EE8ABA007EC4DB /* SessionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F021E7E98300C8CDA4 /* SessionContainer.swift */; };
+		123690C921EE8ABA007EC4DB /* NotificationPosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F121E7E98300C8CDA4 /* NotificationPosting.swift */; };
+		123690CA21EE8ABA007EC4DB /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F221E7E98300C8CDA4 /* Session.swift */; };
+		123690CB21EE8ABA007EC4DB /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F321E7E98300C8CDA4 /* UserSession.swift */; };
+		123690CC21EE8ABA007EC4DB /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F421E7E98300C8CDA4 /* Refreshable.swift */; };
+		123690CF21EE8E6B007EC4DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123690CD21EE8E6B007EC4DB /* LoginViewController.swift */; };
+		123690D221EE8E8B007EC4DB /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123690D121EE8E8B007EC4DB /* RefreshViewController.swift */; };
+		1278B53F21EE6FE7001D1E58 /* SessionTools_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1278B53D21EE6FE7001D1E58 /* SessionTools_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1278B54B21EE7042001D1E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278B54A21EE7042001D1E58 /* AppDelegate.swift */; };
+		1278B54D21EE7042001D1E58 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278B54C21EE7042001D1E58 /* HomeViewController.swift */; };
+		1278B54F21EE7044001D1E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1278B54E21EE7044001D1E58 /* Assets.xcassets */; };
+		1278B55221EE7044001D1E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1278B55021EE7044001D1E58 /* Main.storyboard */; };
+		1278B55821EE70AD001D1E58 /* SessionTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1278B53B21EE6FE7001D1E58 /* SessionTools.framework */; };
+		1278B55921EE70AD001D1E58 /* SessionTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1278B53B21EE6FE7001D1E58 /* SessionTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1278B55F21EE85E5001D1E58 /* ExampleSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826E421E7E98300C8CDA4 /* ExampleSession.swift */; };
+		1278B56021EE85E5001D1E58 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826E821E7E98300C8CDA4 /* SessionManager.swift */; };
+		12C9DE9921ED39F400233C1B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C9DE9721ED39F400233C1B /* Interface.storyboard */; };
+		12C9DE9B21ED39F500233C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C9DE9A21ED39F500233C1B /* Assets.xcassets */; };
+		12C9DEA221ED39F600233C1B /* SessionTools-watchOSExampleExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 12C9DEA121ED39F500233C1B /* SessionTools-watchOSExampleExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		12C9DEA721ED39F600233C1B /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DEA621ED39F600233C1B /* HomeInterfaceController.swift */; };
+		12C9DEA921ED39F600233C1B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DEA821ED39F600233C1B /* ExtensionDelegate.swift */; };
+		12C9DEAB21ED39F600233C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C9DEAA21ED39F600233C1B /* Assets.xcassets */; };
+		12C9DEAF21ED39F600233C1B /* SessionTools-watchOSExample.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 12C9DE9521ED39F300233C1B /* SessionTools-watchOSExample.app */; };
+		12C9DEC121ED3C4D00233C1B /* SessionTools_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C9DEBF21ED3C4D00233C1B /* SessionTools_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12C9DECB21ED3CA100233C1B /* KeychainStorageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826EE21E7E98300C8CDA4 /* KeychainStorageContainer.swift */; };
+		12C9DECC21ED3CA100233C1B /* SessionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F021E7E98300C8CDA4 /* SessionContainer.swift */; };
+		12C9DECD21ED3CA100233C1B /* NotificationPosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F121E7E98300C8CDA4 /* NotificationPosting.swift */; };
+		12C9DECE21ED3CA100233C1B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F221E7E98300C8CDA4 /* Session.swift */; };
+		12C9DECF21ED3CA100233C1B /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F321E7E98300C8CDA4 /* UserSession.swift */; };
+		12C9DED021ED3CA100233C1B /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F421E7E98300C8CDA4 /* Refreshable.swift */; };
+		12C9DEDA21ED3CB500233C1B /* SessionTools_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C9DED821ED3CB500233C1B /* SessionTools_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12C9DEE321ED3CDD00233C1B /* KeychainStorageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826EE21E7E98300C8CDA4 /* KeychainStorageContainer.swift */; };
+		12C9DEE421ED3CDD00233C1B /* SessionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F021E7E98300C8CDA4 /* SessionContainer.swift */; };
+		12C9DEE521ED3CDD00233C1B /* NotificationPosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F121E7E98300C8CDA4 /* NotificationPosting.swift */; };
+		12C9DEE621ED3CDD00233C1B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F221E7E98300C8CDA4 /* Session.swift */; };
+		12C9DEE721ED3CDD00233C1B /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F321E7E98300C8CDA4 /* UserSession.swift */; };
+		12C9DEE821ED3CDD00233C1B /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F421E7E98300C8CDA4 /* Refreshable.swift */; };
+		12C9DEF021ED3D0600233C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DEEF21ED3D0600233C1B /* AppDelegate.swift */; };
+		12C9DEF521ED3D0600233C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C9DEF321ED3D0600233C1B /* Main.storyboard */; };
+		12C9DEF721ED3D0700233C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C9DEF621ED3D0700233C1B /* Assets.xcassets */; };
+		12C9DEFC21ED3D4400233C1B /* SessionTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C9DED621ED3CB500233C1B /* SessionTools.framework */; };
+		12C9DEFD21ED3D4400233C1B /* SessionTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12C9DED621ED3CB500233C1B /* SessionTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12C9DF0121EE583500233C1B /* ExampleSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826E421E7E98300C8CDA4 /* ExampleSession.swift */; };
+		12C9DF0221EE583500233C1B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826E821E7E98300C8CDA4 /* SessionManager.swift */; };
+		12C9DF0321EE583900233C1B /* ExampleSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826E421E7E98300C8CDA4 /* ExampleSession.swift */; };
+		12C9DF0421EE583900233C1B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826E821E7E98300C8CDA4 /* SessionManager.swift */; };
+		12C9DF0921EE586500233C1B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826DF21E7E98300C8CDA4 /* HomeViewController.swift */; };
+		12C9DF0A21EE586500233C1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826E621E7E98300C8CDA4 /* LoginViewController.swift */; };
+		12C9DF0B21EE586500233C1B /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826DE21E7E98300C8CDA4 /* RefreshViewController.swift */; };
+		12C9DF0D21EE5CF700233C1B /* LoginInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DF0C21EE5CF700233C1B /* LoginInterfaceController.swift */; };
+		12C9DF0F21EE5D0B00233C1B /* RefreshInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DF0E21EE5D0B00233C1B /* RefreshInterfaceController.swift */; };
 		12F8272F21E7EB8A00C8CDA4 /* SessionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F021E7E98300C8CDA4 /* SessionContainer.swift */; };
 		12F8273021E7EB8A00C8CDA4 /* NotificationPosting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F121E7E98300C8CDA4 /* NotificationPosting.swift */; };
 		12F8273121E7EB8A00C8CDA4 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F221E7E98300C8CDA4 /* Session.swift */; };
@@ -31,12 +85,53 @@
 		12F8275E21E7F4B000C8CDA4 /* UserSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227E5D6206EECE0000A8620 /* UserSessionTests.swift */; };
 		12F8275F21E7F4B000C8CDA4 /* MockNotificationPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120025D0207BE9B600DAE7EA /* MockNotificationPoster.swift */; };
 		12F8276221E8003700C8CDA4 /* MockStorageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F8276121E8003700C8CDA4 /* MockStorageContainer.swift */; };
+		307FD8190108739521290EB9 /* Pods_SessionTools_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF292BC984E4F7F4DF6D53A /* Pods_SessionTools_tvOS.framework */; };
 		353262E7063BBEC3790052ED /* Pods_SessionTools_iOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326B6C4F9C711D118BCDF068 /* Pods_SessionTools_iOSExample.framework */; };
+		6977643890BE5334B12AD468 /* Pods_SessionTools_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070DF76C81F284BF6C4607AC /* Pods_SessionTools_macOS.framework */; };
+		7AAE5F74B8AB69E86C93A12A /* Pods_SessionTools_tvOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB80821663CD0C519AD3B3 /* Pods_SessionTools_tvOSExample.framework */; };
+		814DC9E09F3A26830EB200BB /* Pods_SessionTools_watchOSExampleExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAE6A35A959EE49F4297712 /* Pods_SessionTools_watchOSExampleExtension.framework */; };
 		8BC195A33E7FC36992FDC548 /* Pods_SessionTools_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E800A23F8F5D39991DF577D /* Pods_SessionTools_iOSTests.framework */; };
+		9B03A90AC69774CF76622F23 /* Pods_SessionTools_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261C1C1E8A470D6C9F0C3B31 /* Pods_SessionTools_watchOS.framework */; };
 		B9D1FAFC8FBB5938F1B6D975 /* Pods_SessionTools_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2446606CC9FEE19B7D9E37F /* Pods_SessionTools_iOS.framework */; };
+		FCBA135264F970F05A3C7682 /* Pods_SessionTools_macOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFCB98A95A2032A664BF040 /* Pods_SessionTools_macOSExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1219095A21EE669000CF7421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C9DEBC21ED3C4D00233C1B;
+			remoteInfo = "SessionTools-watchOS";
+		};
+		1278B55A21EE70AD001D1E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1278B53A21EE6FE7001D1E58;
+			remoteInfo = "SessionTools-macOS";
+		};
+		12C9DEA321ED39F600233C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C9DEA021ED39F500233C1B;
+			remoteInfo = "SessionTools-watchOSExample Extension";
+		};
+		12C9DEAD21ED39F600233C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C9DE9421ED39F300233C1B;
+			remoteInfo = "SessionTools-watchOSExample";
+		};
+		12C9DEFE21ED3D4400233C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C9DED521ED3CB500233C1B;
+			remoteInfo = "SessionTools-tvOS";
+		};
 		12F8274721E7F0E300C8CDA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -61,6 +156,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1219095C21EE669100CF7421 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1219095921EE669000CF7421 /* SessionTools.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278B55C21EE70AD001D1E58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1278B55921EE70AD001D1E58 /* SessionTools.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DEB521ED39F600233C1B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				12C9DEA221ED39F600233C1B /* SessionTools-watchOSExampleExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DEB721ED39F600233C1B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				12C9DEAF21ED39F600233C1B /* SessionTools-watchOSExample.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DF0021ED3D4400233C1B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12C9DEFD21ED3D4400233C1B /* SessionTools.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12F8274921E7F0E300C8CDA4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,7 +225,44 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		070DF76C81F284BF6C4607AC /* Pods_SessionTools_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDF9C0429FFABD2A8337372 /* Pods-SessionTools-tvOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-tvOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample.debug.xcconfig"; sourceTree = "<group>"; };
+		0D782AE0B1305D8BF3FD8654 /* Pods-SessionTools-watchOSExampleExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-watchOSExampleExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension.release.xcconfig"; sourceTree = "<group>"; };
 		120025D0207BE9B600DAE7EA /* MockNotificationPoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotificationPoster.swift; sourceTree = "<group>"; };
+		123690CD21EE8E6B007EC4DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		123690D121EE8E8B007EC4DB /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
+		1278B53B21EE6FE7001D1E58 /* SessionTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1278B53D21EE6FE7001D1E58 /* SessionTools_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionTools_macOS.h; sourceTree = "<group>"; };
+		1278B53E21EE6FE7001D1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1278B54821EE7042001D1E58 /* SessionTools-macOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SessionTools-macOSExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1278B54A21EE7042001D1E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1278B54C21EE7042001D1E58 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1278B54E21EE7044001D1E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1278B55121EE7044001D1E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1278B55321EE7044001D1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1278B55421EE7044001D1E58 /* SessionTools_macOSExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SessionTools_macOSExample.entitlements; sourceTree = "<group>"; };
+		12C9DE9521ED39F300233C1B /* SessionTools-watchOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SessionTools-watchOSExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C9DE9821ED39F400233C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		12C9DE9A21ED39F500233C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C9DE9C21ED39F500233C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C9DEA121ED39F500233C1B /* SessionTools-watchOSExampleExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SessionTools-watchOSExampleExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C9DEA621ED39F600233C1B /* HomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaceController.swift; sourceTree = "<group>"; };
+		12C9DEA821ED39F600233C1B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		12C9DEAA21ED39F600233C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C9DEAC21ED39F600233C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C9DEBD21ED3C4D00233C1B /* SessionTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C9DEBF21ED3C4D00233C1B /* SessionTools_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionTools_watchOS.h; sourceTree = "<group>"; };
+		12C9DEC021ED3C4D00233C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C9DED621ED3CB500233C1B /* SessionTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C9DED821ED3CB500233C1B /* SessionTools_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionTools_tvOS.h; sourceTree = "<group>"; };
+		12C9DED921ED3CB500233C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C9DEED21ED3D0600233C1B /* SessionTools-tvOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SessionTools-tvOSExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C9DEEF21ED3D0600233C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12C9DEF421ED3D0600233C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12C9DEF621ED3D0700233C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C9DEF821ED3D0700233C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C9DF0C21EE5CF700233C1B /* LoginInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaceController.swift; sourceTree = "<group>"; };
+		12C9DF0E21EE5D0B00233C1B /* RefreshInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshInterfaceController.swift; sourceTree = "<group>"; };
 		12F826DE21E7E98300C8CDA4 /* RefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
 		12F826DF21E7E98300C8CDA4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		12F826E121E7E98300C8CDA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -101,26 +288,92 @@
 		12F8275021E7F44F00C8CDA4 /* SessionTools-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SessionTools-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F8275421E7F44F00C8CDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F8276121E8003700C8CDA4 /* MockStorageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorageContainer.swift; sourceTree = "<group>"; };
+		147F10ED15912A6860E15980 /* Pods-SessionTools-macOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-macOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample.debug.xcconfig"; sourceTree = "<group>"; };
+		1A53829E2325C896A660DE58 /* Pods-SessionTools-watchOSExampleExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-watchOSExampleExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		1DF292BC984E4F7F4DF6D53A /* Pods_SessionTools_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		261C1C1E8A470D6C9F0C3B31 /* Pods_SessionTools_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		298A1A13F8FD5B0CD137E226 /* Pods_SessionTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E49D3627942B3299358EE63 /* Pods-SessionTools-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOS/Pods-SessionTools-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		326B6C4F9C711D118BCDF068 /* Pods_SessionTools_iOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_iOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		378FBE352C62759A9ECBBEC2 /* Pods_SessionTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48537D8F6017ACD418CC74DD /* Pods-SessionTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools_Example/Pods-SessionTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		61E0B7E63B266DAA02DA5759 /* Pods-SessionTools-macOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-macOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample.release.xcconfig"; sourceTree = "<group>"; };
 		6227E5D2206EECE0000A8620 /* SessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTests.swift; sourceTree = "<group>"; };
 		6227E5D3206EECE0000A8620 /* KeychainStorageContainerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStorageContainerTests.swift; sourceTree = "<group>"; };
 		6227E5D5206EECE0000A8620 /* MockSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		6227E5D6206EECE0000A8620 /* UserSessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionTests.swift; sourceTree = "<group>"; };
+		66200086E1E12EEA9A41A833 /* Pods_SessionTools_watchOSExample_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_watchOSExample_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0605E0C9E1B903E3EFA9BF /* Pods-SessionTools-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-tvOS/Pods-SessionTools-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6EFCB98A95A2032A664BF040 /* Pods_SessionTools_macOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_macOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D16F722E38D6FC8C6EE8C92 /* Pods-SessionTools-iOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample.release.xcconfig"; sourceTree = "<group>"; };
 		7E800A23F8F5D39991DF577D /* Pods_SessionTools_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A87EA5E80A6ECDB1FE8DBD8 /* Pods-SessionTools-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-watchOS/Pods-SessionTools-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9E23A9820862F10A2A442E0A /* Pods-SessionTools-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A237808C650D1C17A37BB0F6 /* Pods-SessionTools-tvOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-tvOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample.release.xcconfig"; sourceTree = "<group>"; };
+		BADE7C19BF3927D941CEFE90 /* Pods-SessionTools-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-macOS/Pods-SessionTools-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3D0968F031BEDD558D9810 /* Pods_SessionTools_watchOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_watchOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2446606CC9FEE19B7D9E37F /* Pods_SessionTools_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDCABE7C37938A7CCB01D48B /* Pods-SessionTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools_Example/Pods-SessionTools_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CDCB80821663CD0C519AD3B3 /* Pods_SessionTools_tvOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_tvOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC053638ECBBC2D76D57FBC /* Pods-SessionTools-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-macOS/Pods-SessionTools-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		EB0AA47BC16246E376F7E8D6 /* Pods-SessionTools-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-watchOS/Pods-SessionTools-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		EB67B2E6ED1894133864AB4C /* Pods-SessionTools-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOS/Pods-SessionTools-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F8939C8A2B4B0B3B7C69CA04 /* Pods-SessionTools-iOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample.debug.xcconfig"; sourceTree = "<group>"; };
 		FEB471AFD961B3A3027E5B33 /* Pods-SessionTools-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		FFAE6A35A959EE49F4297712 /* Pods_SessionTools_watchOSExampleExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_watchOSExampleExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFEB32850571978011754988 /* Pods-SessionTools-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-tvOS/Pods-SessionTools-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1278B53821EE6FE7001D1E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6977643890BE5334B12AD468 /* Pods_SessionTools_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278B54521EE7042001D1E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1278B55821EE70AD001D1E58 /* SessionTools.framework in Frameworks */,
+				FCBA135264F970F05A3C7682 /* Pods_SessionTools_macOSExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DE9E21ED39F500233C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1219095821EE669000CF7421 /* SessionTools.framework in Frameworks */,
+				814DC9E09F3A26830EB200BB /* Pods_SessionTools_watchOSExampleExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DEBA21ED3C4D00233C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B03A90AC69774CF76622F23 /* Pods_SessionTools_watchOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DED321ED3CB500233C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307FD8190108739521290EB9 /* Pods_SessionTools_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DEEA21ED3D0600233C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DEFC21ED3D4400233C1B /* SessionTools.framework in Frameworks */,
+				7AAE5F74B8AB69E86C93A12A /* Pods_SessionTools_tvOSExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12F8270A21E7E9E400C8CDA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +400,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7ACB6D5E6757EE482983E483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -158,8 +418,102 @@
 				C2446606CC9FEE19B7D9E37F /* Pods_SessionTools_iOS.framework */,
 				326B6C4F9C711D118BCDF068 /* Pods_SessionTools_iOSExample.framework */,
 				7E800A23F8F5D39991DF577D /* Pods_SessionTools_iOSTests.framework */,
+				1DF292BC984E4F7F4DF6D53A /* Pods_SessionTools_tvOS.framework */,
+				CDCB80821663CD0C519AD3B3 /* Pods_SessionTools_tvOSExample.framework */,
+				261C1C1E8A470D6C9F0C3B31 /* Pods_SessionTools_watchOS.framework */,
+				BF3D0968F031BEDD558D9810 /* Pods_SessionTools_watchOSExample.framework */,
+				66200086E1E12EEA9A41A833 /* Pods_SessionTools_watchOSExample_Extension.framework */,
+				FFAE6A35A959EE49F4297712 /* Pods_SessionTools_watchOSExampleExtension.framework */,
+				070DF76C81F284BF6C4607AC /* Pods_SessionTools_macOS.framework */,
+				6EFCB98A95A2032A664BF040 /* Pods_SessionTools_macOSExample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1278B54321EE6FF3001D1E58 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1278B53D21EE6FE7001D1E58 /* SessionTools_macOS.h */,
+				1278B53E21EE6FE7001D1E58 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		1278B54921EE7042001D1E58 /* SessionTools-macOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				1278B54A21EE7042001D1E58 /* AppDelegate.swift */,
+				1278B54C21EE7042001D1E58 /* HomeViewController.swift */,
+				123690CD21EE8E6B007EC4DB /* LoginViewController.swift */,
+				123690D121EE8E8B007EC4DB /* RefreshViewController.swift */,
+				1278B54E21EE7044001D1E58 /* Assets.xcassets */,
+				1278B55021EE7044001D1E58 /* Main.storyboard */,
+				1278B55321EE7044001D1E58 /* Info.plist */,
+				1278B55421EE7044001D1E58 /* SessionTools_macOSExample.entitlements */,
+			);
+			path = "SessionTools-macOSExample";
+			sourceTree = "<group>";
+		};
+		12C9DE9621ED39F400233C1B /* SessionTools-watchOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				12C9DE9721ED39F400233C1B /* Interface.storyboard */,
+				12C9DE9A21ED39F500233C1B /* Assets.xcassets */,
+				12C9DE9C21ED39F500233C1B /* Info.plist */,
+			);
+			path = "SessionTools-watchOSExample";
+			sourceTree = "<group>";
+		};
+		12C9DEA521ED39F600233C1B /* SessionTools-watchOSExampleExtension */ = {
+			isa = PBXGroup;
+			children = (
+				12C9DEA621ED39F600233C1B /* HomeInterfaceController.swift */,
+				12C9DF0C21EE5CF700233C1B /* LoginInterfaceController.swift */,
+				12C9DF0E21EE5D0B00233C1B /* RefreshInterfaceController.swift */,
+				12C9DEA821ED39F600233C1B /* ExtensionDelegate.swift */,
+				12C9DEAA21ED39F600233C1B /* Assets.xcassets */,
+				12C9DEAC21ED39F600233C1B /* Info.plist */,
+			);
+			path = "SessionTools-watchOSExampleExtension";
+			sourceTree = "<group>";
+		};
+		12C9DEC521ED3C5B00233C1B /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				12C9DEBF21ED3C4D00233C1B /* SessionTools_watchOS.h */,
+				12C9DEC021ED3C4D00233C1B /* Info.plist */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		12C9DEE221ED3CBC00233C1B /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				12C9DED821ED3CB500233C1B /* SessionTools_tvOS.h */,
+				12C9DED921ED3CB500233C1B /* Info.plist */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		12C9DEEE21ED3D0600233C1B /* SessionTools-tvOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				12C9DEEF21ED3D0600233C1B /* AppDelegate.swift */,
+				12C9DEF321ED3D0600233C1B /* Main.storyboard */,
+				12C9DEF621ED3D0700233C1B /* Assets.xcassets */,
+				12C9DEF821ED3D0700233C1B /* Info.plist */,
+			);
+			path = "SessionTools-tvOSExample";
+			sourceTree = "<group>";
+		};
+		12C9DF0521EE584F00233C1B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				12F826DF21E7E98300C8CDA4 /* HomeViewController.swift */,
+				12F826E621E7E98300C8CDA4 /* LoginViewController.swift */,
+				12F826DE21E7E98300C8CDA4 /* RefreshViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		12F826DC21E7E98300C8CDA4 /* Examples */ = {
@@ -167,6 +521,10 @@
 			children = (
 				12F8274021E7EE7B00C8CDA4 /* Shared */,
 				12F826DD21E7E98300C8CDA4 /* SessionTools-iOSExample */,
+				12C9DE9621ED39F400233C1B /* SessionTools-watchOSExample */,
+				12C9DEA521ED39F600233C1B /* SessionTools-watchOSExampleExtension */,
+				12C9DEEE21ED3D0600233C1B /* SessionTools-tvOSExample */,
+				1278B54921EE7042001D1E58 /* SessionTools-macOSExample */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -175,9 +533,6 @@
 			isa = PBXGroup;
 			children = (
 				12F826E721E7E98300C8CDA4 /* AppDelegate.swift */,
-				12F826DF21E7E98300C8CDA4 /* HomeViewController.swift */,
-				12F826E621E7E98300C8CDA4 /* LoginViewController.swift */,
-				12F826DE21E7E98300C8CDA4 /* RefreshViewController.swift */,
 				12F826E221E7E98300C8CDA4 /* Main.storyboard */,
 				12F826E521E7E98300C8CDA4 /* Images.xcassets */,
 				12F826E021E7E98300C8CDA4 /* LaunchScreen.xib */,
@@ -227,6 +582,9 @@
 		12F8272B21E7EA5800C8CDA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1278B54321EE6FF3001D1E58 /* macOS */,
+				12C9DEE221ED3CBC00233C1B /* tvOS */,
+				12C9DEC521ED3C5B00233C1B /* watchOS */,
 				12F8276021E7F5C900C8CDA4 /* iOS */,
 			);
 			path = "Supporting Files";
@@ -235,6 +593,7 @@
 		12F8274021E7EE7B00C8CDA4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				12C9DF0521EE584F00233C1B /* ViewControllers */,
 				12F826E421E7E98300C8CDA4 /* ExampleSession.swift */,
 				12F826E821E7E98300C8CDA4 /* SessionManager.swift */,
 			);
@@ -280,6 +639,13 @@
 				12F8270D21E7E9E400C8CDA4 /* SessionTools.framework */,
 				12F8271921E7EA2200C8CDA4 /* SessionTools-iOSExample.app */,
 				12F8275021E7F44F00C8CDA4 /* SessionTools-iOSTests.xctest */,
+				12C9DE9521ED39F300233C1B /* SessionTools-watchOSExample.app */,
+				12C9DEA121ED39F500233C1B /* SessionTools-watchOSExampleExtension.appex */,
+				12C9DEBD21ED3C4D00233C1B /* SessionTools.framework */,
+				12C9DED621ED3CB500233C1B /* SessionTools.framework */,
+				12C9DEED21ED3D0600233C1B /* SessionTools-tvOSExample.app */,
+				1278B53B21EE6FE7001D1E58 /* SessionTools.framework */,
+				1278B54821EE7042001D1E58 /* SessionTools-macOSExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,14 +665,24 @@
 		8494D3E39D5CD6DF6FA6E1AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				48537D8F6017ACD418CC74DD /* Pods-SessionTools_Example.debug.xcconfig */,
-				DDCABE7C37938A7CCB01D48B /* Pods-SessionTools_Example.release.xcconfig */,
 				EB67B2E6ED1894133864AB4C /* Pods-SessionTools-iOS.debug.xcconfig */,
 				2E49D3627942B3299358EE63 /* Pods-SessionTools-iOS.release.xcconfig */,
 				F8939C8A2B4B0B3B7C69CA04 /* Pods-SessionTools-iOSExample.debug.xcconfig */,
 				7D16F722E38D6FC8C6EE8C92 /* Pods-SessionTools-iOSExample.release.xcconfig */,
 				9E23A9820862F10A2A442E0A /* Pods-SessionTools-iOSTests.debug.xcconfig */,
 				FEB471AFD961B3A3027E5B33 /* Pods-SessionTools-iOSTests.release.xcconfig */,
+				6E0605E0C9E1B903E3EFA9BF /* Pods-SessionTools-tvOS.debug.xcconfig */,
+				FFEB32850571978011754988 /* Pods-SessionTools-tvOS.release.xcconfig */,
+				0BDF9C0429FFABD2A8337372 /* Pods-SessionTools-tvOSExample.debug.xcconfig */,
+				A237808C650D1C17A37BB0F6 /* Pods-SessionTools-tvOSExample.release.xcconfig */,
+				9A87EA5E80A6ECDB1FE8DBD8 /* Pods-SessionTools-watchOS.debug.xcconfig */,
+				EB0AA47BC16246E376F7E8D6 /* Pods-SessionTools-watchOS.release.xcconfig */,
+				1A53829E2325C896A660DE58 /* Pods-SessionTools-watchOSExampleExtension.debug.xcconfig */,
+				0D782AE0B1305D8BF3FD8654 /* Pods-SessionTools-watchOSExampleExtension.release.xcconfig */,
+				BADE7C19BF3927D941CEFE90 /* Pods-SessionTools-macOS.debug.xcconfig */,
+				DCC053638ECBBC2D76D57FBC /* Pods-SessionTools-macOS.release.xcconfig */,
+				147F10ED15912A6860E15980 /* Pods-SessionTools-macOSExample.debug.xcconfig */,
+				61E0B7E63B266DAA02DA5759 /* Pods-SessionTools-macOSExample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -314,6 +690,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1278B53621EE6FE7001D1E58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1278B53F21EE6FE7001D1E58 /* SessionTools_macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DEB821ED3C4D00233C1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DEC121ED3C4D00233C1B /* SessionTools_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DED121ED3CB500233C1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DEDA21ED3CB500233C1B /* SessionTools_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12F8270821E7E9E400C8CDA4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +724,144 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1278B53A21EE6FE7001D1E58 /* SessionTools-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1278B54021EE6FE7001D1E58 /* Build configuration list for PBXNativeTarget "SessionTools-macOS" */;
+			buildPhases = (
+				12D689FD22CFCC10918778C7 /* [CP] Check Pods Manifest.lock */,
+				1278B53621EE6FE7001D1E58 /* Headers */,
+				1278B53721EE6FE7001D1E58 /* Sources */,
+				1278B53821EE6FE7001D1E58 /* Frameworks */,
+				1278B53921EE6FE7001D1E58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SessionTools-macOS";
+			productName = "SessionTools-macOS";
+			productReference = 1278B53B21EE6FE7001D1E58 /* SessionTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1278B54721EE7042001D1E58 /* SessionTools-macOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1278B55521EE7044001D1E58 /* Build configuration list for PBXNativeTarget "SessionTools-macOSExample" */;
+			buildPhases = (
+				C7D238C39DA6CEC71C69FDDF /* [CP] Check Pods Manifest.lock */,
+				1278B54421EE7042001D1E58 /* Sources */,
+				1278B54521EE7042001D1E58 /* Frameworks */,
+				1278B54621EE7042001D1E58 /* Resources */,
+				1278B55C21EE70AD001D1E58 /* Embed Frameworks */,
+				23438A7020846AA35406921E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1278B55B21EE70AD001D1E58 /* PBXTargetDependency */,
+			);
+			name = "SessionTools-macOSExample";
+			productName = "SessionTools-macOSExample";
+			productReference = 1278B54821EE7042001D1E58 /* SessionTools-macOSExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12C9DE9421ED39F300233C1B /* SessionTools-watchOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C9DEB621ED39F600233C1B /* Build configuration list for PBXNativeTarget "SessionTools-watchOSExample" */;
+			buildPhases = (
+				12C9DE9321ED39F300233C1B /* Resources */,
+				12C9DEB521ED39F600233C1B /* Embed App Extensions */,
+				7ACB6D5E6757EE482983E483 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C9DEA421ED39F600233C1B /* PBXTargetDependency */,
+			);
+			name = "SessionTools-watchOSExample";
+			productName = "SessionTools-watchOSExample";
+			productReference = 12C9DE9521ED39F300233C1B /* SessionTools-watchOSExample.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		12C9DEA021ED39F500233C1B /* SessionTools-watchOSExampleExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C9DEB421ED39F600233C1B /* Build configuration list for PBXNativeTarget "SessionTools-watchOSExampleExtension" */;
+			buildPhases = (
+				3ED215E8CCF7CDCA3966D4D2 /* [CP] Check Pods Manifest.lock */,
+				12C9DE9D21ED39F500233C1B /* Sources */,
+				12C9DE9E21ED39F500233C1B /* Frameworks */,
+				12C9DE9F21ED39F500233C1B /* Resources */,
+				FF9495DF433C8CC92360D42B /* [CP] Embed Pods Frameworks */,
+				1219095C21EE669100CF7421 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1219095B21EE669000CF7421 /* PBXTargetDependency */,
+			);
+			name = "SessionTools-watchOSExampleExtension";
+			productName = "SessionTools-watchOSExample Extension";
+			productReference = 12C9DEA121ED39F500233C1B /* SessionTools-watchOSExampleExtension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		12C9DEBC21ED3C4D00233C1B /* SessionTools-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C9DEC221ED3C4D00233C1B /* Build configuration list for PBXNativeTarget "SessionTools-watchOS" */;
+			buildPhases = (
+				271D3D360AD3AAC3C87BCF4A /* [CP] Check Pods Manifest.lock */,
+				12C9DEB821ED3C4D00233C1B /* Headers */,
+				12C9DEB921ED3C4D00233C1B /* Sources */,
+				12C9DEBA21ED3C4D00233C1B /* Frameworks */,
+				12C9DEBB21ED3C4D00233C1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SessionTools-watchOS";
+			productName = "SessionTools-watchOS";
+			productReference = 12C9DEBD21ED3C4D00233C1B /* SessionTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		12C9DED521ED3CB500233C1B /* SessionTools-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C9DEDF21ED3CB500233C1B /* Build configuration list for PBXNativeTarget "SessionTools-tvOS" */;
+			buildPhases = (
+				56F9B0BDCF21151128CAA119 /* [CP] Check Pods Manifest.lock */,
+				12C9DED121ED3CB500233C1B /* Headers */,
+				12C9DED221ED3CB500233C1B /* Sources */,
+				12C9DED321ED3CB500233C1B /* Frameworks */,
+				12C9DED421ED3CB500233C1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SessionTools-tvOS";
+			productName = "SessionTools-tvOS";
+			productReference = 12C9DED621ED3CB500233C1B /* SessionTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		12C9DEEC21ED3D0600233C1B /* SessionTools-tvOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C9DEF921ED3D0700233C1B /* Build configuration list for PBXNativeTarget "SessionTools-tvOSExample" */;
+			buildPhases = (
+				7AB60665C583CAF411B978D6 /* [CP] Check Pods Manifest.lock */,
+				12C9DEE921ED3D0600233C1B /* Sources */,
+				12C9DEEA21ED3D0600233C1B /* Frameworks */,
+				12C9DEEB21ED3D0600233C1B /* Resources */,
+				12C9DF0021ED3D4400233C1B /* Embed Frameworks */,
+				77883CA3DD4FC31EC9FF3144 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C9DEFF21ED3D4400233C1B /* PBXTargetDependency */,
+			);
+			name = "SessionTools-tvOSExample";
+			productName = "SessionTools-tvOSExample";
+			productReference = 12C9DEED21ED3D0600233C1B /* SessionTools-tvOSExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		12F8270C21E7E9E400C8CDA4 /* SessionTools-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F8271221E7E9E400C8CDA4 /* Build configuration list for PBXNativeTarget "SessionTools-iOS" */;
@@ -354,11 +892,13 @@
 				12F8271721E7EA2200C8CDA4 /* Resources */,
 				12F8274921E7F0E300C8CDA4 /* Embed Frameworks */,
 				BAD61124A6781FC544FEC323 /* [CP] Embed Pods Frameworks */,
+				12C9DEB721ED39F600233C1B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				12F8274821E7F0E300C8CDA4 /* PBXTargetDependency */,
+				12C9DEAE21ED39F600233C1B /* PBXTargetDependency */,
 			);
 			name = "SessionTools-iOSExample";
 			productName = "SessionTools-iOSExample";
@@ -396,6 +936,40 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					1278B53A21EE6FE7001D1E58 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					1278B54721EE7042001D1E58 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 2UAV38D2MU;
+						ProvisioningStyle = Automatic;
+					};
+					12C9DE9421ED39F300233C1B = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 2UAV38D2MU;
+						ProvisioningStyle = Automatic;
+					};
+					12C9DEA021ED39F500233C1B = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 2UAV38D2MU;
+						ProvisioningStyle = Automatic;
+					};
+					12C9DEBC21ED3C4D00233C1B = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 2UAV38D2MU;
+						ProvisioningStyle = Automatic;
+					};
+					12C9DED521ED3CB500233C1B = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 2UAV38D2MU;
+						ProvisioningStyle = Automatic;
+					};
+					12C9DEEC21ED3D0600233C1B = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 2UAV38D2MU;
+						ProvisioningStyle = Automatic;
+					};
 					12F8270C21E7E9E400C8CDA4 = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 2UAV38D2MU;
@@ -430,11 +1004,74 @@
 				12F8270C21E7E9E400C8CDA4 /* SessionTools-iOS */,
 				12F8274F21E7F44F00C8CDA4 /* SessionTools-iOSTests */,
 				12F8271821E7EA2200C8CDA4 /* SessionTools-iOSExample */,
+				12C9DEBC21ED3C4D00233C1B /* SessionTools-watchOS */,
+				12C9DE9421ED39F300233C1B /* SessionTools-watchOSExample */,
+				12C9DEA021ED39F500233C1B /* SessionTools-watchOSExampleExtension */,
+				12C9DED521ED3CB500233C1B /* SessionTools-tvOS */,
+				12C9DEEC21ED3D0600233C1B /* SessionTools-tvOSExample */,
+				1278B53A21EE6FE7001D1E58 /* SessionTools-macOS */,
+				1278B54721EE7042001D1E58 /* SessionTools-macOSExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1278B53921EE6FE7001D1E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278B54621EE7042001D1E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1278B54F21EE7044001D1E58 /* Assets.xcassets in Resources */,
+				1278B55221EE7044001D1E58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DE9321ED39F300233C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DE9B21ED39F500233C1B /* Assets.xcassets in Resources */,
+				12C9DE9921ED39F400233C1B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DE9F21ED39F500233C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DEAB21ED39F600233C1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DEBB21ED3C4D00233C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DED421ED3CB500233C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DEEB21ED3D0600233C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DEF721ED3D0700233C1B /* Assets.xcassets in Resources */,
+				12C9DEF521ED3D0600233C1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12F8270B21E7E9E400C8CDA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,18 +1099,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		12D689FD22CFCC10918778C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionTools-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		12F8276421E805CD00C8CDA4 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = SwiftLint;
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,7 +1138,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess-iOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -496,6 +1147,78 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23438A7020846AA35406921E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess-macOS/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		271D3D360AD3AAC3C87BCF4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionTools-watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ED215E8CCF7CDCA3966D4D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionTools-watchOSExampleExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56F9B0BDCF21151128CAA119 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionTools-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		672A458DC4598506812A2A99 /* [CP] Check Pods Manifest.lock */ = {
@@ -510,6 +1233,42 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SessionTools-iOSExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77883CA3DD4FC31EC9FF3144 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess-tvOS/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AB60665C583CAF411B978D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionTools-tvOSExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -541,7 +1300,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess-iOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -550,6 +1309,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7D238C39DA6CEC71C69FDDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SessionTools-macOSExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FC516D35B02AD0C8413762B2 /* [CP] Check Pods Manifest.lock */ = {
@@ -570,9 +1347,105 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FF9495DF433C8CC92360D42B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess-watchOS/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1278B53721EE6FE7001D1E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123690CA21EE8ABA007EC4DB /* Session.swift in Sources */,
+				123690CB21EE8ABA007EC4DB /* UserSession.swift in Sources */,
+				123690C921EE8ABA007EC4DB /* NotificationPosting.swift in Sources */,
+				123690CC21EE8ABA007EC4DB /* Refreshable.swift in Sources */,
+				123690C821EE8ABA007EC4DB /* SessionContainer.swift in Sources */,
+				123690C721EE8ABA007EC4DB /* KeychainStorageContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278B54421EE7042001D1E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1278B55F21EE85E5001D1E58 /* ExampleSession.swift in Sources */,
+				1278B54D21EE7042001D1E58 /* HomeViewController.swift in Sources */,
+				1278B56021EE85E5001D1E58 /* SessionManager.swift in Sources */,
+				123690CF21EE8E6B007EC4DB /* LoginViewController.swift in Sources */,
+				123690D221EE8E8B007EC4DB /* RefreshViewController.swift in Sources */,
+				1278B54B21EE7042001D1E58 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DE9D21ED39F500233C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DF0F21EE5D0B00233C1B /* RefreshInterfaceController.swift in Sources */,
+				12C9DF0121EE583500233C1B /* ExampleSession.swift in Sources */,
+				12C9DEA921ED39F600233C1B /* ExtensionDelegate.swift in Sources */,
+				12C9DF0221EE583500233C1B /* SessionManager.swift in Sources */,
+				12C9DEA721ED39F600233C1B /* HomeInterfaceController.swift in Sources */,
+				12C9DF0D21EE5CF700233C1B /* LoginInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DEB921ED3C4D00233C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DECE21ED3CA100233C1B /* Session.swift in Sources */,
+				12C9DECF21ED3CA100233C1B /* UserSession.swift in Sources */,
+				12C9DECD21ED3CA100233C1B /* NotificationPosting.swift in Sources */,
+				12C9DED021ED3CA100233C1B /* Refreshable.swift in Sources */,
+				12C9DECC21ED3CA100233C1B /* SessionContainer.swift in Sources */,
+				12C9DECB21ED3CA100233C1B /* KeychainStorageContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DED221ED3CB500233C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DEE621ED3CDD00233C1B /* Session.swift in Sources */,
+				12C9DEE721ED3CDD00233C1B /* UserSession.swift in Sources */,
+				12C9DEE521ED3CDD00233C1B /* NotificationPosting.swift in Sources */,
+				12C9DEE821ED3CDD00233C1B /* Refreshable.swift in Sources */,
+				12C9DEE421ED3CDD00233C1B /* SessionContainer.swift in Sources */,
+				12C9DEE321ED3CDD00233C1B /* KeychainStorageContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C9DEE921ED3D0600233C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C9DF0A21EE586500233C1B /* LoginViewController.swift in Sources */,
+				12C9DF0921EE586500233C1B /* HomeViewController.swift in Sources */,
+				12C9DF0321EE583900233C1B /* ExampleSession.swift in Sources */,
+				12C9DF0B21EE586500233C1B /* RefreshViewController.swift in Sources */,
+				12C9DF0421EE583900233C1B /* SessionManager.swift in Sources */,
+				12C9DEF021ED3D0600233C1B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12F8270921E7E9E400C8CDA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +1488,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1219095B21EE669000CF7421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C9DEBC21ED3C4D00233C1B /* SessionTools-watchOS */;
+			targetProxy = 1219095A21EE669000CF7421 /* PBXContainerItemProxy */;
+		};
+		1278B55B21EE70AD001D1E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1278B53A21EE6FE7001D1E58 /* SessionTools-macOS */;
+			targetProxy = 1278B55A21EE70AD001D1E58 /* PBXContainerItemProxy */;
+		};
+		12C9DEA421ED39F600233C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C9DEA021ED39F500233C1B /* SessionTools-watchOSExampleExtension */;
+			targetProxy = 12C9DEA321ED39F600233C1B /* PBXContainerItemProxy */;
+		};
+		12C9DEAE21ED39F600233C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C9DE9421ED39F300233C1B /* SessionTools-watchOSExample */;
+			targetProxy = 12C9DEAD21ED39F600233C1B /* PBXContainerItemProxy */;
+		};
+		12C9DEFF21ED3D4400233C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C9DED521ED3CB500233C1B /* SessionTools-tvOS */;
+			targetProxy = 12C9DEFE21ED3D4400233C1B /* PBXContainerItemProxy */;
+		};
 		12F8274821E7F0E300C8CDA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 12F8270C21E7E9E400C8CDA4 /* SessionTools-iOS */;
@@ -633,6 +1531,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1278B55021EE7044001D1E58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1278B55121EE7044001D1E58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12C9DE9721ED39F400233C1B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12C9DE9821ED39F400233C1B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		12C9DEF321ED3D0600233C1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12C9DEF421ED3D0600233C1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		12F826E021E7E98300C8CDA4 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -652,6 +1574,467 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1278B54121EE6FE7001D1E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADE7C19BF3927D941CEFE90 /* Pods-SessionTools-macOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-macOS";
+				PRODUCT_NAME = SessionTools;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1278B54221EE6FE7001D1E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCC053638ECBBC2D76D57FBC /* Pods-SessionTools-macOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-macOS";
+				PRODUCT_NAME = SessionTools;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1278B55621EE7044001D1E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 147F10ED15912A6860E15980 /* Pods-SessionTools-macOSExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Examples/SessionTools-macOSExample/SessionTools_macOSExample.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-macOSExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-macOSExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1278B55721EE7044001D1E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E0B7E63B266DAA02DA5759 /* Pods-SessionTools-macOSExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Examples/SessionTools-macOSExample/SessionTools_macOSExample.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-macOSExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-macOSExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		12C9DEB021ED39F600233C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = SessionTools_watchOSExample_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-watchOSExample/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-iOSExample.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		12C9DEB121ED39F600233C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = SessionTools_watchOSExample_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-watchOSExample/Info.plist";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-iOSExample.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		12C9DEB221ED39F600233C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A53829E2325C896A660DE58 /* Pods-SessionTools-watchOSExampleExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-watchOSExampleExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-iOSExample.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		12C9DEB321ED39F600233C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D782AE0B1305D8BF3FD8654 /* Pods-SessionTools-watchOSExampleExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-watchOSExampleExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-iOSExample.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		12C9DEC321ED3C4D00233C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A87EA5E80A6ECDB1FE8DBD8 /* Pods-SessionTools-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-watchOS";
+				PRODUCT_NAME = SessionTools;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		12C9DEC421ED3C4D00233C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0AA47BC16246E376F7E8D6 /* Pods-SessionTools-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-watchOS";
+				PRODUCT_NAME = SessionTools;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		12C9DEE021ED3CB500233C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E0605E0C9E1B903E3EFA9BF /* Pods-SessionTools-tvOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-tvOS";
+				PRODUCT_NAME = SessionTools;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12C9DEE121ED3CB500233C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFEB32850571978011754988 /* Pods-SessionTools-tvOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-tvOS";
+				PRODUCT_NAME = SessionTools;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12C9DEFA21ED3D0700233C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BDF9C0429FFABD2A8337372 /* Pods-SessionTools-tvOSExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-tvOSExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-tvOSExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		12C9DEFB21ED3D0700233C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A237808C650D1C17A37BB0F6 /* Pods-SessionTools-tvOSExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-tvOSExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-tvOSExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Release;
+		};
 		12F8271321E7E9E400C8CDA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EB67B2E6ED1894133864AB4C /* Pods-SessionTools-iOS.debug.xcconfig */;
@@ -941,6 +2324,69 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1278B54021EE6FE7001D1E58 /* Build configuration list for PBXNativeTarget "SessionTools-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1278B54121EE6FE7001D1E58 /* Debug */,
+				1278B54221EE6FE7001D1E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1278B55521EE7044001D1E58 /* Build configuration list for PBXNativeTarget "SessionTools-macOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1278B55621EE7044001D1E58 /* Debug */,
+				1278B55721EE7044001D1E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C9DEB421ED39F600233C1B /* Build configuration list for PBXNativeTarget "SessionTools-watchOSExampleExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C9DEB221ED39F600233C1B /* Debug */,
+				12C9DEB321ED39F600233C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C9DEB621ED39F600233C1B /* Build configuration list for PBXNativeTarget "SessionTools-watchOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C9DEB021ED39F600233C1B /* Debug */,
+				12C9DEB121ED39F600233C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C9DEC221ED3C4D00233C1B /* Build configuration list for PBXNativeTarget "SessionTools-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C9DEC321ED3C4D00233C1B /* Debug */,
+				12C9DEC421ED3C4D00233C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C9DEDF21ED3CB500233C1B /* Build configuration list for PBXNativeTarget "SessionTools-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C9DEE021ED3CB500233C1B /* Debug */,
+				12C9DEE121ED3CB500233C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C9DEF921ED3D0700233C1B /* Build configuration list for PBXNativeTarget "SessionTools-tvOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C9DEFA21ED3D0700233C1B /* Debug */,
+				12C9DEFB21ED3D0700233C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		12F8271221E7E9E400C8CDA4 /* Build configuration list for PBXNativeTarget "SessionTools-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
