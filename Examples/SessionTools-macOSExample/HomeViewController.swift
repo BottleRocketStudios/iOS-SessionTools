@@ -11,7 +11,7 @@ class HomeViewController: NSViewController {
     
     // MARK: - Properties
     
-    @IBOutlet private var helloLabel: NSTextField!
+    @IBOutlet private var helloTextField: NSTextField!
     @IBOutlet private var refreshButton: NSButton!
     @IBOutlet private var loginButton: NSButton!
     private let guestMessage = "Hello, Guest"
@@ -78,11 +78,11 @@ class HomeViewController: NSViewController {
     
     private func updateViewState(forUser user: User? = SessionManager.shared.currentUser) {
         if let currentUser = user {
-            helloLabel.stringValue = "Hello, \(currentUser.name)"
+            helloTextField.stringValue = "Hello, \(currentUser.name)"
             refreshButton.isHidden = false
             loginButton.title = "Log Out"
         } else {
-            helloLabel.stringValue = guestMessage
+            helloTextField.stringValue = guestMessage
             refreshButton.isHidden = true
             loginButton.title = "Log In"
         }

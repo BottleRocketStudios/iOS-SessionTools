@@ -2,8 +2,7 @@
 //  MockNotificationPoster.swift
 //  SessionTools_Example
 //
-//  Created by Ryan Gant on 4/9/18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  Copyright (c) 2019 Bottle Rocket Studios. All rights reserved.
 //
 
 import Foundation
