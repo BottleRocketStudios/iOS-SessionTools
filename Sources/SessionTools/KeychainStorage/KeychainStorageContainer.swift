@@ -8,13 +8,13 @@
 import Foundation
 import KeychainAccess
 
-/// The lifecycle of the keychain item added
+/// The lifecycle of the keychain item's data
 public enum KeychainLifecycle: Equatable {
-    /// Default case - it's up to you and the OS rules to define when this session is deleted
+    /// Default case - The framework will make no attempt to remove the session's data on your behalf and you will be responsible for removing this session's data by calling `Session.deleteItem()` when needed. Because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install.
     case unmanaged
     
-    /// The session will only live in the current installation - a delete and reinstall will make this item unreachable.
-    /// - identifier: A unique identifier for the installation. It should remain stable between installations.
+    /// The session will only persist for the current installation identifier. It does this by prepending the installation identifier to the keychain key. You could still get the data back by reusing a previous installation identifier, but because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install.
+    /// - identifier: A unique identifier for the installation. This identifier should remain stable for the current installation but change between installations.
     case currentInstall(identifier: String)
 }
 

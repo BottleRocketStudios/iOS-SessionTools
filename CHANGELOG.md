@@ -10,7 +10,7 @@
   [Ryan Gant](https://github.com/ganttastic)
   [#15](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/15)
   
-  * Added `KeychainLifecycle` to `KeychainStorageContainer` to be more explicit about how long data is kept.
+  * Added `KeychainLifecycle` to `KeychainStorageContainer` to be more explicit about how keychain information is persisted across app installs.
   [Ryan Gant](https://github.com/ganttastic)
   [#16](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/16)
 
