@@ -8,6 +8,10 @@
 import XCTest
 @testable import SessionTools
 
+enum UserSessionError: Error {
+    case general
+}
+
 class UserSessionTests: XCTestCase {
     
     private let storageIdentifier = "userSessionStorageIdentifier"
@@ -81,6 +85,40 @@ class UserSessionTests: XCTestCase {
         })
     }
     
+    func test_RefreshUserSession_RefreshMultipleSessions() {
+        userSession?.refreshHandler = refreshHandler(_:)
+        let allSessions: [Refreshable] = [userSession!, userSession!]
+        
+        let expectation = XCTestExpectation(description: "All sessions refresh")
+        allSessions.refresh { (_) in
+            //Since we're really just refreshing the same session twice, this should be 2
+            XCTAssertEqual(self.refreshCallCount, 2)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    func test_RefreshUserSession_RefreshMultipleSessionWithFailure() {
+        userSession?.refreshHandler = refreshHandler(_:)
+        
+        //Setup another session to throw a failure when refreshing
+        let anyContainer = AnySessionContainer(container!)
+        let failUserSession = UserSession<MockUser>(container: anyContainer, storageIdentifier: storageIdentifier, notificationPoster: notificationPoster!)
+        failUserSession.refreshHandler = failureRefreshHandler(_:)
+        
+        let allSessions: [Refreshable] = [userSession!, failUserSession]
+        
+        let expectation = XCTestExpectation(description: "All sessions refresh")
+        allSessions.refresh { (error) in
+            //Make sure the error is passed through
+            XCTAssertNotNil(error)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
     // MARK: - Private
     
     private func logoutUser() {
@@ -96,5 +134,9 @@ class UserSessionTests: XCTestCase {
     private func refreshHandler(_ completion: @escaping RefreshCompletion) {
         refreshCallCount += 1
         completion(nil)
+    }
+    
+    private func failureRefreshHandler(_ completion: @escaping RefreshCompletion) {
+        completion(RefreshError.unableToRefresh(error: UserSessionError.general))
     }
 }
