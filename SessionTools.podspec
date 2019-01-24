@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'SessionTools'
-    s.version          = '1.0.2'
+    s.version          = '1.1.0'
     s.summary          = 'Provides a simple way to make "session" objects for storing, deleting, and refreshing data.'
 
     s.description      = <<-DESC
