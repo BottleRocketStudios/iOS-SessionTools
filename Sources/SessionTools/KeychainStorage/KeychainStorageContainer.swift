@@ -10,10 +10,12 @@ import KeychainAccess
 
 /// The lifecycle of the keychain item's data
 public enum KeychainLifecycle: Equatable {
-    /// Default case - The framework will make no attempt to remove the session's data on your behalf and you will be responsible for removing this session's data by calling `Session.deleteItem()` when needed. Because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install.
+    /// Default case - The framework will make no attempt to remove the session's data on your behalf and you will be responsible for removing this session's data by calling `Session.deleteItem()` when needed.
+    /// Because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install.
     case unmanaged
     
-    /// The session will only persist for the current installation identifier. It does this by prepending the installation identifier to the keychain key. You could still get the data back by reusing a previous installation identifier, but because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install.
+    /// The session will only persist for the current installation identifier. It does this by prepending the installation identifier to the keychain key.
+    /// You could still get the data back by reusing a previous installation identifier, but because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install.
     /// - identifier: A unique identifier for the installation. This identifier should remain stable for the current installation but change between installations.
     case currentInstall(identifier: String)
 }
@@ -28,7 +30,7 @@ public struct KeychainContainerConfig: Equatable {
         let internalKeychainName: String
         switch lifecycle {
         case .currentInstall(let installationIdentifier):
-            //If we're using an install lifecycle, append the install ID to the keychain name
+            //If we're using an install lifecycle, prepend the install ID to the keychain name
             internalKeychainName = installationIdentifier + keychainName
         case .unmanaged:
             //Otherwise, just set the name as it's unmanaged

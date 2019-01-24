@@ -43,7 +43,7 @@ struct Model: Codable {
 
 ##### 2. Create a `KeychainContainerConfig` supplied with a `keychainName`.
 
-The default container configuration uses an unmanaged keychain container. This means the framework will make no attempt to remove the session's data on your behalf and you will be responsible for removing this session's data by calling `Session.deleteItem()` when needed. Because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychainDiscussion) 
+The default container configuration uses an unmanaged keychain container. This means the framework will make no attempt to remove the session's data on your behalf and you will be responsible for removing this session's data by calling `Session.deleteItem()` when needed. Because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychain-discussion) 
 
 ``` swift
 let config = KeychainContainerConfig(keychainName: "your.keychain.name")
@@ -51,7 +51,7 @@ let config = KeychainContainerConfig(keychainName: "your.keychain.name")
 
 If you only want the session's data to persist for the current installation, instantiate your `KeychainContainerConfig` with lifecycle `KeychainLifecycle.currentInstall()` and pass in an installation identifier. This identifier should remain stable for the current installation but change between installations.
 
-This installation indentifier is prepended to the keychain name before running keychain operations. Because the identifier changes between installations the previous key will no longer match. You could theoretically still get that key back if you reuse a previous installation identifier, but because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychainDiscussion) 
+This installation indentifier is prepended to the keychain name before running keychain operations. Because the identifier changes between installations the previous key will no longer match. You could theoretically still get that key back if you reuse a previous installation identifier, but because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychain-discussion) 
 
 ``` swift
 let managedConfig = KeychainContainerConfig(keychainName: "com.app.name", lifecycle: .currentInstall(identifier: installationIdentifier))
@@ -192,9 +192,9 @@ Or if you're not working in an environment with access to the keychain, use the 
 pod 'SessionTools/Base'
 ```
 
-## <a name="keychainDiscussion"></a>Keychain Discussion
+## Keychain Discussion
 
-In the past, the keychain keys you add from your app persists across installs. While this is still the case, we can't guarantee this will remain the case in future versions. [This post](https://forums.developer.apple.com/thread/36442#112814) summarizes that fact. In iOS 10.3 Beta 2, Apple added a feature to remove all application keychain keys on uninstall, but reverted when it caused issues with existing apps. When/if Apple formalizes the behavoir, we will formalize here as well.
+In the past, the keychain data you add from your app persists across installs. While this is still the case, we can't guarantee this will remain the case in future versions. [This post](https://forums.developer.apple.com/thread/36442#112814) summarizes that fact. In iOS 10.3 Beta 2, Apple added a feature to remove all application keychain data on uninstall, but reverted when it caused issues with existing apps. When/if Apple formalizes the behavoir, we will formalize here as well.
 
 ## Contributing
 

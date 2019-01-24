@@ -96,7 +96,7 @@ class UserSessionTests: XCTestCase {
             expectation.fulfill()
         }
         
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: 1.0)
     }
     
     func test_RefreshUserSession_RefreshMultipleSessionWithFailure() {
@@ -116,7 +116,7 @@ class UserSessionTests: XCTestCase {
             expectation.fulfill()
         }
         
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: 1.0)
     }
     
     // MARK: - Private
