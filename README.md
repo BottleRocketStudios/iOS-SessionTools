@@ -4,6 +4,8 @@
 [![Version](https://img.shields.io/cocoapods/v/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
 [![License](https://img.shields.io/cocoapods/l/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
 [![Platform](https://img.shields.io/cocoapods/p/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
+[![codecov](https://codecov.io/gh/BottleRocketStudios/iOS-SessionTools/branch/master/graph/badge.svg)](https://codecov.io/gh/BottleRocketStudios/iOS-SessionTools)
+[![codebeat badge](https://codebeat.co/badges/296d63cb-ed54-4fae-bedb-65562b6b08d6)](https://codebeat.co/projects/github-com-bottlerocketstudios-ios-sessiontools-master)
 
 ## Purpose
 This library makes session management easier. There are a few main goals:
@@ -40,8 +42,19 @@ struct Model: Codable {
 ```
 
 ##### 2. Create a `KeychainContainerConfig` supplied with a `keychainName`.
+
+The default container configuration uses an unmanaged keychain container. This means the framework will make no attempt to remove the session's data on your behalf and you will be responsible for removing this session's data by calling `Session.deleteItem()` when needed. Because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychain-discussion) 
+
 ``` swift
 let config = KeychainContainerConfig(keychainName: "your.keychain.name")
+```
+
+If you only want the session's data to persist for the current installation, instantiate your `KeychainContainerConfig` with lifecycle `KeychainLifecycle.currentInstall()` and pass in an installation identifier. This identifier should remain stable for the current installation but change between installations.
+
+This installation indentifier is prepended to the keychain name before running keychain operations. Because the identifier changes between installations the previous key will no longer match. You could theoretically still get that key back if you reuse a previous installation identifier, but because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychain-discussion) 
+
+``` swift
+let managedConfig = KeychainContainerConfig(keychainName: "com.app.name", lifecycle: .currentInstall(identifier: installationIdentifier))
 ```
 
 ##### 3. Create a `KeychainStorageContainer` supplied with your `KeychainContainerConfig`. 
@@ -159,6 +172,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 * iOS 9.0+
+* watchOS 2.0+
+* tvOS 9.0+
+* macOS 10.9+
 * Swift 4.1
 
 ## Installation
@@ -175,6 +191,10 @@ Or if you're not working in an environment with access to the keychain, use the 
 ```ruby
 pod 'SessionTools/Base'
 ```
+
+## Keychain Discussion
+
+In the past, the keychain data you add from your app persists across installs. While this is still the case, we can't guarantee this will remain the case in future versions. [This post](https://forums.developer.apple.com/thread/36442#112814) summarizes that fact. In iOS 10.3 Beta 2, Apple added a feature to remove all application keychain data on uninstall, but reverted when it caused issues with existing apps. When/if Apple formalizes the behavoir, we will formalize here as well.
 
 ## Contributing
 

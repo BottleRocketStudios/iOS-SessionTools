@@ -15,8 +15,9 @@ class MockNotificationPoster: NotificationPosting {
     var updatedNotificationReceived = false
     
     func post(name aName: NSNotification.Name, object anObject: Any?, userInfo aUserInfo: [AnyHashable: Any]?) {
-        guard let sessionState = aUserInfo?[UserSessionConstants.userSessionStateInfoKey] as? UserSessionStateChange else { return }
-
+        let notification = Notification(name: aName, object: nil, userInfo: aUserInfo)
+        guard let sessionState = notification.userSessionState else { return }
+        
         switch sessionState {
         case .loggedIn:
             loginNotificationReceived = true
