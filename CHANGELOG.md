@@ -2,22 +2,32 @@
 
 ##### Enhancements
 
+* None
+
+##### Bug Fixes
+
+* None.
+
+
+## 1.1.0 (2019-01-25)
+
+##### Enhancements
+
 * Restructured project to match standard and added SwiftLint.
   [Ryan Gant](https://github.com/ganttastic)
   [#14](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/14)
-  
-  * Added tvOS/watchOS/macOS support and examples.
+
+* Added tvOS/watchOS/macOS support and examples.
   [Ryan Gant](https://github.com/ganttastic)
   [#15](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/15)
-  
-  * Added `KeychainLifecycle` to `KeychainStorageContainer` to be more explicit about how keychain information is persisted across app installs.
+
+* Added `KeychainLifecycle` to `KeychainStorageContainer` to be more explicit about how keychain information is persisted across app installs.
   [Ryan Gant](https://github.com/ganttastic)
   [#16](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/16)
 
 ##### Bug Fixes
 
 * None.
-
 
 ## 1.0.2 (2018-09-20)
 
