@@ -913,7 +913,6 @@
 				12F8274C21E7F44F00C8CDA4 /* Sources */,
 				12F8274D21E7F44F00C8CDA4 /* Frameworks */,
 				12F8274E21E7F44F00C8CDA4 /* Resources */,
-				17A487036108BF74F2A734DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -993,6 +992,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1131,31 +1131,13 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		17A487036108BF74F2A734DA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess-iOS/KeychainAccess.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		23438A7020846AA35406921E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess-macOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1164,7 +1146,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		271D3D360AD3AAC3C87BCF4A /* [CP] Check Pods Manifest.lock */ = {
@@ -1245,7 +1227,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess-tvOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1254,7 +1236,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7AB60665C583CAF411B978D6 /* [CP] Check Pods Manifest.lock */ = {
@@ -1299,7 +1281,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess-iOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1308,7 +1290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C7D238C39DA6CEC71C69FDDF /* [CP] Check Pods Manifest.lock */ = {
@@ -1353,7 +1335,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess-watchOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1362,7 +1344,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
