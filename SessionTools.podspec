@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
     s.name             = 'SessionTools'
     s.version          = '1.1.0'
     s.summary          = 'Provides a simple way to make "session" objects for storing, deleting, and refreshing data.'
-
+    s.swift_version    = '5.0'
+    
     s.description      = <<-DESC
     Provides a simple way to create "session" objects for use in your own session manager setup. It can store, delete, and refresh any info you want. You can also broadcast notifications when your info changes.
     DESC
