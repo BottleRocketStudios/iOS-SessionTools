@@ -913,7 +913,6 @@
 				12F8274C21E7F44F00C8CDA4 /* Sources */,
 				12F8274D21E7F44F00C8CDA4 /* Frameworks */,
 				12F8274E21E7F44F00C8CDA4 /* Resources */,
-				17A487036108BF74F2A734DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -953,11 +952,13 @@
 					12C9DEA021ED39F500233C1B = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 2UAV38D2MU;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					12C9DEBC21ED3C4D00233C1B = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 2UAV38D2MU;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					12C9DED521ED3CB500233C1B = {
@@ -973,16 +974,19 @@
 					12F8270C21E7E9E400C8CDA4 = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 2UAV38D2MU;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					12F8271821E7EA2200C8CDA4 = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 2UAV38D2MU;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					12F8274F21E7F44F00C8CDA4 = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = 2UAV38D2MU;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 12F8271821E7EA2200C8CDA4;
 					};
@@ -990,7 +994,7 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SessionTools" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -1131,31 +1135,13 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		17A487036108BF74F2A734DA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess-iOS/KeychainAccess.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		23438A7020846AA35406921E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess-macOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1164,7 +1150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		271D3D360AD3AAC3C87BCF4A /* [CP] Check Pods Manifest.lock */ = {
@@ -1245,7 +1231,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess-tvOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1254,7 +1240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7AB60665C583CAF411B978D6 /* [CP] Check Pods Manifest.lock */ = {
@@ -1299,7 +1285,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess-iOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1308,7 +1294,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C7D238C39DA6CEC71C69FDDF /* [CP] Check Pods Manifest.lock */ = {
@@ -1353,7 +1339,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess-watchOS/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1362,7 +1348,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1607,7 +1593,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1643,7 +1629,7 @@
 				PRODUCT_NAME = SessionTools;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1677,7 +1663,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1706,7 +1692,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-macOSExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1734,7 +1720,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1761,7 +1747,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1792,7 +1778,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1820,7 +1806,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -1858,8 +1844,8 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1895,8 +1881,8 @@
 				PRODUCT_NAME = SessionTools;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,4";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1934,8 +1920,9 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1969,8 +1956,9 @@
 				PRODUCT_NAME = SessionTools;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -2001,9 +1989,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -2029,9 +2017,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-tvOSExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 12.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -2066,7 +2054,7 @@
 				PRODUCT_NAME = SessionTools;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2101,7 +2089,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-iOS";
 				PRODUCT_NAME = SessionTools;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2132,7 +2120,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-iOSExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2158,7 +2146,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-iOSExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -2186,7 +2174,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SessionTools-iOSExample.app/SessionTools-iOSExample";
 			};
@@ -2212,7 +2200,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bottlerocketstudios.SessionTools-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SessionTools-iOSExample.app/SessionTools-iOSExample";
 			};
