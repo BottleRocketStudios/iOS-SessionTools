@@ -31,7 +31,7 @@ open class Session<T: Codable> {
     }
     
     public var currentItem: T? {
-        let user = try? container.item(forIdentifier: storageIdentifier, jsonDecoder: decoder)
+        guard let user = ((try? container.item(forIdentifier: storageIdentifier, jsonDecoder: decoder)) as T??) else { return nil }
         return user
     }
     
