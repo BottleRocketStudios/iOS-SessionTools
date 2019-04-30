@@ -8,9 +8,8 @@
 
 Pod::Spec.new do |s|
     s.name             = 'SessionTools'
-    s.version          = '1.1.0'
+    s.version          = '1.2.0'
     s.summary          = 'Provides a simple way to make "session" objects for storing, deleting, and refreshing data.'
-    s.swift_version    = '5.0'
     
     s.description      = <<-DESC
     Provides a simple way to create "session" objects for use in your own session manager setup. It can store, delete, and refresh any info you want. You can also broadcast notifications when your info changes.
@@ -22,6 +21,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/bottlerocketstudios/iOS-SessionTools.git', :tag => s.version.to_s }
     s.default_subspec = 'KeychainStorage'
 
+    s.swift_version = '5.0'
     s.ios.deployment_target = '9.0'
     s.watchos.deployment_target = '2.0'
     s.tvos.deployment_target = '9.0'
