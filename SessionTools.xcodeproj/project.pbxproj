@@ -2258,6 +2258,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSION = 1.2.0;
 			};
 			name = Debug;
 		};
@@ -2306,6 +2307,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
+				VERSION = 1.2.0;
 			};
 			name = Release;
 		};
