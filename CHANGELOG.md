@@ -2,6 +2,15 @@
 
 ##### Enhancements
 
+##### Bug Fixes
+
+* None.
+
+
+## 1.2.0 (2019-04-30)
+
+##### Enhancements
+
 * Migrate to Swift 5.0.
 [Earl Gaspard](https://github.com/earlgaspard)
 [#20](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/20)
@@ -30,6 +39,7 @@
 ##### Bug Fixes
 
 * None.
+
 
 ## 1.0.2 (2018-09-20)
 
