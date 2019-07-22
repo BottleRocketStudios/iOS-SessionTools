@@ -1,5 +1,5 @@
 PODS:
-  - KeychainAccess (3.1.2)
+  - KeychainAccess (3.2.0)
 
 DEPENDENCIES:
   - KeychainAccess
@@ -9,8 +9,8 @@ SPEC REPOS:
     - KeychainAccess
 
 SPEC CHECKSUMS:
-  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  KeychainAccess: 3b1bf8a77eb4c6ea1ce9404c292e48f948954c6b
 
 PODFILE CHECKSUM: 79e98c0b3c352474ffb593a8f6d97268b957eade
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.3
