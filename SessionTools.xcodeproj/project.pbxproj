@@ -17,10 +17,10 @@
 		123690CC21EE8ABA007EC4DB /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F421E7E98300C8CDA4 /* Refreshable.swift */; };
 		123690CF21EE8E6B007EC4DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123690CD21EE8E6B007EC4DB /* LoginViewController.swift */; };
 		123690D221EE8E8B007EC4DB /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123690D121EE8E8B007EC4DB /* RefreshViewController.swift */; };
-		125DD91322F0EE7700AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91222F0EE7700AFA88B /* KeychainAccess.framework */; };
-		125DD91522F0EEAF00AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91422F0EEAF00AFA88B /* KeychainAccess.framework */; };
-		125DD91722F0EEB800AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91622F0EEB800AFA88B /* KeychainAccess.framework */; };
-		125DD91922F0EEC100AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91822F0EEC100AFA88B /* KeychainAccess.framework */; };
+		125DD91322F0EE7700AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91222F0EE7700AFA88B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		125DD91522F0EEAF00AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91422F0EEAF00AFA88B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		125DD91722F0EEB800AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91622F0EEB800AFA88B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		125DD91922F0EEC100AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91822F0EEC100AFA88B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		125DD91C22F0EFA000AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91222F0EE7700AFA88B /* KeychainAccess.framework */; };
 		1278B53F21EE6FE7001D1E58 /* SessionTools_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1278B53D21EE6FE7001D1E58 /* SessionTools_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1278B54B21EE7042001D1E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278B54A21EE7042001D1E58 /* AppDelegate.swift */; };
