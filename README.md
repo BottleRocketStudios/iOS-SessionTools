@@ -169,7 +169,21 @@ Access the `userSessionState` property on the notification to easily get the sta
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, you'll first need to use [Carthage](https://github.com/Carthage/Carthage) to install SessionTool's dependency ([KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess).
+
+After [installing Carthage](https://github.com/Carthage/Carthage#installing-carthage), clone the repo:
+
+```bash
+git clone https://github.com/BottleRocketStudios/iOS-SessionTools.git
+```
+
+Next, use Carthage to install the dependencies:
+
+```bash
+carthage update
+```
+
+From here, you can open up `SessionTools.xcworkspace` and run the examples:
 
 ## Requirements
 
