@@ -24,6 +24,7 @@ env:
   - DESTINATION="arch=x86_64"                                                         SCHEME="$MACOS_FRAMEWORK_SCHEME"    RUN_TESTS="NO"  POD_LINT="NO"   RUN_DANGER="NO"
 cache:
   directories:
+  - "Carthage"
   - "~/.danger-swift"
 addons:
   homebrew:
@@ -31,10 +32,10 @@ addons:
     taps:
     - danger/tap
     packages:
+    - carthage
     - danger-swift
 before_install:
-- gem install cocoapods
-- pod install
+  - carthage bootstrap --verbose --no-use-binaries --platform iOS,tvOS,watchOS --cache-builds
 script:
 - swiftlint
 - set -o pipefail
