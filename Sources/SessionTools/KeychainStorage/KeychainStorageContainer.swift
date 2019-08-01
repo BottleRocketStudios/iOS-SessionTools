@@ -6,6 +6,9 @@
 //
 
 import Foundation
+
+//As KeychainAccess is optional, only define this class if available
+#if canImport(KeychainAccess)
 import KeychainAccess
 
 /// The lifecycle of the keychain item's data
@@ -84,3 +87,4 @@ extension KeychainStorageContainer: Equatable {
         return lhs.config == rhs.config
     }
 }
+#endif

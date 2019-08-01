@@ -17,6 +17,11 @@
 		123690CC21EE8ABA007EC4DB /* Refreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F826F421E7E98300C8CDA4 /* Refreshable.swift */; };
 		123690CF21EE8E6B007EC4DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123690CD21EE8E6B007EC4DB /* LoginViewController.swift */; };
 		123690D221EE8E8B007EC4DB /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123690D121EE8E8B007EC4DB /* RefreshViewController.swift */; };
+		125DD91322F0EE7700AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91222F0EE7700AFA88B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		125DD91522F0EEAF00AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91422F0EEAF00AFA88B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		125DD91722F0EEB800AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91622F0EEB800AFA88B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		125DD91922F0EEC100AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91822F0EEC100AFA88B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		125DD91C22F0EFA000AFA88B /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125DD91222F0EE7700AFA88B /* KeychainAccess.framework */; };
 		1278B53F21EE6FE7001D1E58 /* SessionTools_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1278B53D21EE6FE7001D1E58 /* SessionTools_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1278B54B21EE7042001D1E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278B54A21EE7042001D1E58 /* AppDelegate.swift */; };
 		1278B54D21EE7042001D1E58 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278B54C21EE7042001D1E58 /* HomeViewController.swift */; };
@@ -85,15 +90,6 @@
 		12F8275E21E7F4B000C8CDA4 /* UserSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6227E5D6206EECE0000A8620 /* UserSessionTests.swift */; };
 		12F8275F21E7F4B000C8CDA4 /* MockNotificationPoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120025D0207BE9B600DAE7EA /* MockNotificationPoster.swift */; };
 		12F8276221E8003700C8CDA4 /* MockStorageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F8276121E8003700C8CDA4 /* MockStorageContainer.swift */; };
-		307FD8190108739521290EB9 /* Pods_SessionTools_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF292BC984E4F7F4DF6D53A /* Pods_SessionTools_tvOS.framework */; };
-		353262E7063BBEC3790052ED /* Pods_SessionTools_iOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326B6C4F9C711D118BCDF068 /* Pods_SessionTools_iOSExample.framework */; };
-		6977643890BE5334B12AD468 /* Pods_SessionTools_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070DF76C81F284BF6C4607AC /* Pods_SessionTools_macOS.framework */; };
-		7AAE5F74B8AB69E86C93A12A /* Pods_SessionTools_tvOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB80821663CD0C519AD3B3 /* Pods_SessionTools_tvOSExample.framework */; };
-		814DC9E09F3A26830EB200BB /* Pods_SessionTools_watchOSExampleExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAE6A35A959EE49F4297712 /* Pods_SessionTools_watchOSExampleExtension.framework */; };
-		8BC195A33E7FC36992FDC548 /* Pods_SessionTools_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E800A23F8F5D39991DF577D /* Pods_SessionTools_iOSTests.framework */; };
-		9B03A90AC69774CF76622F23 /* Pods_SessionTools_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261C1C1E8A470D6C9F0C3B31 /* Pods_SessionTools_watchOS.framework */; };
-		B9D1FAFC8FBB5938F1B6D975 /* Pods_SessionTools_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2446606CC9FEE19B7D9E37F /* Pods_SessionTools_iOS.framework */; };
-		FCBA135264F970F05A3C7682 /* Pods_SessionTools_macOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFCB98A95A2032A664BF040 /* Pods_SessionTools_macOSExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,12 +221,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		070DF76C81F284BF6C4607AC /* Pods_SessionTools_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BDF9C0429FFABD2A8337372 /* Pods-SessionTools-tvOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-tvOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample.debug.xcconfig"; sourceTree = "<group>"; };
-		0D782AE0B1305D8BF3FD8654 /* Pods-SessionTools-watchOSExampleExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-watchOSExampleExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension.release.xcconfig"; sourceTree = "<group>"; };
 		120025D0207BE9B600DAE7EA /* MockNotificationPoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotificationPoster.swift; sourceTree = "<group>"; };
 		123690CD21EE8E6B007EC4DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		123690D121EE8E8B007EC4DB /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
+		125DD91222F0EE7700AFA88B /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		125DD91422F0EEAF00AFA88B /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/watchOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		125DD91622F0EEB800AFA88B /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/tvOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		125DD91822F0EEC100AFA88B /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/Mac/KeychainAccess.framework; sourceTree = "<group>"; };
 		1278B53B21EE6FE7001D1E58 /* SessionTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1278B53D21EE6FE7001D1E58 /* SessionTools_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionTools_macOS.h; sourceTree = "<group>"; };
 		1278B53E21EE6FE7001D1E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -288,38 +285,10 @@
 		12F8275021E7F44F00C8CDA4 /* SessionTools-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SessionTools-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F8275421E7F44F00C8CDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F8276121E8003700C8CDA4 /* MockStorageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorageContainer.swift; sourceTree = "<group>"; };
-		147F10ED15912A6860E15980 /* Pods-SessionTools-macOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-macOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample.debug.xcconfig"; sourceTree = "<group>"; };
-		1A53829E2325C896A660DE58 /* Pods-SessionTools-watchOSExampleExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-watchOSExampleExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		1DF292BC984E4F7F4DF6D53A /* Pods_SessionTools_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		261C1C1E8A470D6C9F0C3B31 /* Pods_SessionTools_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		298A1A13F8FD5B0CD137E226 /* Pods_SessionTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E49D3627942B3299358EE63 /* Pods-SessionTools-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOS/Pods-SessionTools-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		326B6C4F9C711D118BCDF068 /* Pods_SessionTools_iOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_iOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		378FBE352C62759A9ECBBEC2 /* Pods_SessionTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61E0B7E63B266DAA02DA5759 /* Pods-SessionTools-macOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-macOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample.release.xcconfig"; sourceTree = "<group>"; };
 		6227E5D2206EECE0000A8620 /* SessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTests.swift; sourceTree = "<group>"; };
 		6227E5D3206EECE0000A8620 /* KeychainStorageContainerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStorageContainerTests.swift; sourceTree = "<group>"; };
 		6227E5D5206EECE0000A8620 /* MockSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		6227E5D6206EECE0000A8620 /* UserSessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionTests.swift; sourceTree = "<group>"; };
-		66200086E1E12EEA9A41A833 /* Pods_SessionTools_watchOSExample_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_watchOSExample_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E0605E0C9E1B903E3EFA9BF /* Pods-SessionTools-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-tvOS/Pods-SessionTools-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		6EFCB98A95A2032A664BF040 /* Pods_SessionTools_macOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_macOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D16F722E38D6FC8C6EE8C92 /* Pods-SessionTools-iOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample.release.xcconfig"; sourceTree = "<group>"; };
-		7E800A23F8F5D39991DF577D /* Pods_SessionTools_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A87EA5E80A6ECDB1FE8DBD8 /* Pods-SessionTools-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-watchOS/Pods-SessionTools-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
-		9E23A9820862F10A2A442E0A /* Pods-SessionTools-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A237808C650D1C17A37BB0F6 /* Pods-SessionTools-tvOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-tvOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample.release.xcconfig"; sourceTree = "<group>"; };
-		BADE7C19BF3927D941CEFE90 /* Pods-SessionTools-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-macOS/Pods-SessionTools-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		BF3D0968F031BEDD558D9810 /* Pods_SessionTools_watchOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_watchOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2446606CC9FEE19B7D9E37F /* Pods_SessionTools_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDCB80821663CD0C519AD3B3 /* Pods_SessionTools_tvOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_tvOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCC053638ECBBC2D76D57FBC /* Pods-SessionTools-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-macOS/Pods-SessionTools-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		EB0AA47BC16246E376F7E8D6 /* Pods-SessionTools-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-watchOS/Pods-SessionTools-watchOS.release.xcconfig"; sourceTree = "<group>"; };
-		EB67B2E6ED1894133864AB4C /* Pods-SessionTools-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOS/Pods-SessionTools-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F8939C8A2B4B0B3B7C69CA04 /* Pods-SessionTools-iOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample.debug.xcconfig"; sourceTree = "<group>"; };
-		FEB471AFD961B3A3027E5B33 /* Pods-SessionTools-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-iOSTests/Pods-SessionTools-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		FFAE6A35A959EE49F4297712 /* Pods_SessionTools_watchOSExampleExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionTools_watchOSExampleExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFEB32850571978011754988 /* Pods-SessionTools-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionTools-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SessionTools-tvOS/Pods-SessionTools-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,7 +296,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6977643890BE5334B12AD468 /* Pods_SessionTools_macOS.framework in Frameworks */,
+				125DD91922F0EEC100AFA88B /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +305,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1278B55821EE70AD001D1E58 /* SessionTools.framework in Frameworks */,
-				FCBA135264F970F05A3C7682 /* Pods_SessionTools_macOSExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +313,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1219095821EE669000CF7421 /* SessionTools.framework in Frameworks */,
-				814DC9E09F3A26830EB200BB /* Pods_SessionTools_watchOSExampleExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +320,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B03A90AC69774CF76622F23 /* Pods_SessionTools_watchOS.framework in Frameworks */,
+				125DD91522F0EEAF00AFA88B /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +328,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				307FD8190108739521290EB9 /* Pods_SessionTools_tvOS.framework in Frameworks */,
+				125DD91722F0EEB800AFA88B /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C9DEFC21ED3D4400233C1B /* SessionTools.framework in Frameworks */,
-				7AAE5F74B8AB69E86C93A12A /* Pods_SessionTools_tvOSExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +344,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D1FAFC8FBB5938F1B6D975 /* Pods_SessionTools_iOS.framework in Frameworks */,
+				125DD91322F0EE7700AFA88B /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +353,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12F8274521E7F0E300C8CDA4 /* SessionTools.framework in Frameworks */,
-				353262E7063BBEC3790052ED /* Pods_SessionTools_iOSExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +360,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125DD91C22F0EFA000AFA88B /* KeychainAccess.framework in Frameworks */,
 				12F8275521E7F44F00C8CDA4 /* SessionTools.framework in Frameworks */,
-				8BC195A33E7FC36992FDC548 /* Pods_SessionTools_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,22 +375,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0514A9692816B2054027AB81 /* Frameworks */ = {
+		125DD91122F0EE7700AFA88B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				378FBE352C62759A9ECBBEC2 /* Pods_SessionTools_Example.framework */,
-				298A1A13F8FD5B0CD137E226 /* Pods_SessionTools_Tests.framework */,
-				C2446606CC9FEE19B7D9E37F /* Pods_SessionTools_iOS.framework */,
-				326B6C4F9C711D118BCDF068 /* Pods_SessionTools_iOSExample.framework */,
-				7E800A23F8F5D39991DF577D /* Pods_SessionTools_iOSTests.framework */,
-				1DF292BC984E4F7F4DF6D53A /* Pods_SessionTools_tvOS.framework */,
-				CDCB80821663CD0C519AD3B3 /* Pods_SessionTools_tvOSExample.framework */,
-				261C1C1E8A470D6C9F0C3B31 /* Pods_SessionTools_watchOS.framework */,
-				BF3D0968F031BEDD558D9810 /* Pods_SessionTools_watchOSExample.framework */,
-				66200086E1E12EEA9A41A833 /* Pods_SessionTools_watchOSExample_Extension.framework */,
-				FFAE6A35A959EE49F4297712 /* Pods_SessionTools_watchOSExampleExtension.framework */,
-				070DF76C81F284BF6C4607AC /* Pods_SessionTools_macOS.framework */,
-				6EFCB98A95A2032A664BF040 /* Pods_SessionTools_macOSExample.framework */,
+				125DD91822F0EEC100AFA88B /* KeychainAccess.framework */,
+				125DD91622F0EEB800AFA88B /* KeychainAccess.framework */,
+				125DD91422F0EEAF00AFA88B /* KeychainAccess.framework */,
+				125DD91222F0EE7700AFA88B /* KeychainAccess.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -628,8 +584,7 @@
 				12F826EB21E7E98300C8CDA4 /* Sources */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				8494D3E39D5CD6DF6FA6E1AA /* Pods */,
-				0514A9692816B2054027AB81 /* Frameworks */,
+				125DD91122F0EE7700AFA88B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -660,31 +615,6 @@
 				12F8275421E7F44F00C8CDA4 /* Info.plist */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		8494D3E39D5CD6DF6FA6E1AA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EB67B2E6ED1894133864AB4C /* Pods-SessionTools-iOS.debug.xcconfig */,
-				2E49D3627942B3299358EE63 /* Pods-SessionTools-iOS.release.xcconfig */,
-				F8939C8A2B4B0B3B7C69CA04 /* Pods-SessionTools-iOSExample.debug.xcconfig */,
-				7D16F722E38D6FC8C6EE8C92 /* Pods-SessionTools-iOSExample.release.xcconfig */,
-				9E23A9820862F10A2A442E0A /* Pods-SessionTools-iOSTests.debug.xcconfig */,
-				FEB471AFD961B3A3027E5B33 /* Pods-SessionTools-iOSTests.release.xcconfig */,
-				6E0605E0C9E1B903E3EFA9BF /* Pods-SessionTools-tvOS.debug.xcconfig */,
-				FFEB32850571978011754988 /* Pods-SessionTools-tvOS.release.xcconfig */,
-				0BDF9C0429FFABD2A8337372 /* Pods-SessionTools-tvOSExample.debug.xcconfig */,
-				A237808C650D1C17A37BB0F6 /* Pods-SessionTools-tvOSExample.release.xcconfig */,
-				9A87EA5E80A6ECDB1FE8DBD8 /* Pods-SessionTools-watchOS.debug.xcconfig */,
-				EB0AA47BC16246E376F7E8D6 /* Pods-SessionTools-watchOS.release.xcconfig */,
-				1A53829E2325C896A660DE58 /* Pods-SessionTools-watchOSExampleExtension.debug.xcconfig */,
-				0D782AE0B1305D8BF3FD8654 /* Pods-SessionTools-watchOSExampleExtension.release.xcconfig */,
-				BADE7C19BF3927D941CEFE90 /* Pods-SessionTools-macOS.debug.xcconfig */,
-				DCC053638ECBBC2D76D57FBC /* Pods-SessionTools-macOS.release.xcconfig */,
-				147F10ED15912A6860E15980 /* Pods-SessionTools-macOSExample.debug.xcconfig */,
-				61E0B7E63B266DAA02DA5759 /* Pods-SessionTools-macOSExample.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -728,7 +658,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1278B54021EE6FE7001D1E58 /* Build configuration list for PBXNativeTarget "SessionTools-macOS" */;
 			buildPhases = (
-				12D689FD22CFCC10918778C7 /* [CP] Check Pods Manifest.lock */,
 				1278B53621EE6FE7001D1E58 /* Headers */,
 				1278B53721EE6FE7001D1E58 /* Sources */,
 				1278B53821EE6FE7001D1E58 /* Frameworks */,
@@ -747,12 +676,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1278B55521EE7044001D1E58 /* Build configuration list for PBXNativeTarget "SessionTools-macOSExample" */;
 			buildPhases = (
-				C7D238C39DA6CEC71C69FDDF /* [CP] Check Pods Manifest.lock */,
 				1278B54421EE7042001D1E58 /* Sources */,
 				1278B54521EE7042001D1E58 /* Frameworks */,
 				1278B54621EE7042001D1E58 /* Resources */,
 				1278B55C21EE70AD001D1E58 /* Embed Frameworks */,
-				23438A7020846AA35406921E /* [CP] Embed Pods Frameworks */,
+				125DD91F22F0F05500AFA88B /* Carthage Copy-Framework */,
 			);
 			buildRules = (
 			);
@@ -786,12 +714,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C9DEB421ED39F600233C1B /* Build configuration list for PBXNativeTarget "SessionTools-watchOSExampleExtension" */;
 			buildPhases = (
-				3ED215E8CCF7CDCA3966D4D2 /* [CP] Check Pods Manifest.lock */,
 				12C9DE9D21ED39F500233C1B /* Sources */,
 				12C9DE9E21ED39F500233C1B /* Frameworks */,
 				12C9DE9F21ED39F500233C1B /* Resources */,
-				FF9495DF433C8CC92360D42B /* [CP] Embed Pods Frameworks */,
 				1219095C21EE669100CF7421 /* Embed Frameworks */,
+				125DD91D22F0EFD800AFA88B /* Carthage Copy-Framework */,
 			);
 			buildRules = (
 			);
@@ -807,7 +734,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C9DEC221ED3C4D00233C1B /* Build configuration list for PBXNativeTarget "SessionTools-watchOS" */;
 			buildPhases = (
-				271D3D360AD3AAC3C87BCF4A /* [CP] Check Pods Manifest.lock */,
 				12C9DEB821ED3C4D00233C1B /* Headers */,
 				12C9DEB921ED3C4D00233C1B /* Sources */,
 				12C9DEBA21ED3C4D00233C1B /* Frameworks */,
@@ -826,7 +752,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C9DEDF21ED3CB500233C1B /* Build configuration list for PBXNativeTarget "SessionTools-tvOS" */;
 			buildPhases = (
-				56F9B0BDCF21151128CAA119 /* [CP] Check Pods Manifest.lock */,
 				12C9DED121ED3CB500233C1B /* Headers */,
 				12C9DED221ED3CB500233C1B /* Sources */,
 				12C9DED321ED3CB500233C1B /* Frameworks */,
@@ -845,12 +770,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C9DEF921ED3D0700233C1B /* Build configuration list for PBXNativeTarget "SessionTools-tvOSExample" */;
 			buildPhases = (
-				7AB60665C583CAF411B978D6 /* [CP] Check Pods Manifest.lock */,
 				12C9DEE921ED3D0600233C1B /* Sources */,
 				12C9DEEA21ED3D0600233C1B /* Frameworks */,
 				12C9DEEB21ED3D0600233C1B /* Resources */,
 				12C9DF0021ED3D4400233C1B /* Embed Frameworks */,
-				77883CA3DD4FC31EC9FF3144 /* [CP] Embed Pods Frameworks */,
+				125DD91E22F0F01F00AFA88B /* Carthage Copy-Framework */,
 			);
 			buildRules = (
 			);
@@ -866,7 +790,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F8271221E7E9E400C8CDA4 /* Build configuration list for PBXNativeTarget "SessionTools-iOS" */;
 			buildPhases = (
-				FC516D35B02AD0C8413762B2 /* [CP] Check Pods Manifest.lock */,
 				12F8270821E7E9E400C8CDA4 /* Headers */,
 				12F8270921E7E9E400C8CDA4 /* Sources */,
 				12F8270A21E7E9E400C8CDA4 /* Frameworks */,
@@ -885,13 +808,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F8272821E7EA2300C8CDA4 /* Build configuration list for PBXNativeTarget "SessionTools-iOSExample" */;
 			buildPhases = (
-				672A458DC4598506812A2A99 /* [CP] Check Pods Manifest.lock */,
 				12F8271521E7EA2200C8CDA4 /* Sources */,
 				12F8271621E7EA2200C8CDA4 /* Frameworks */,
 				12F8271721E7EA2200C8CDA4 /* Resources */,
 				12F8274921E7F0E300C8CDA4 /* Embed Frameworks */,
-				BAD61124A6781FC544FEC323 /* [CP] Embed Pods Frameworks */,
 				12C9DEB721ED39F600233C1B /* Embed Watch Content */,
+				125DD91B22F0EF1F00AFA88B /* Carthage Copy-Framework */,
 			);
 			buildRules = (
 			);
@@ -908,10 +830,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12F8275821E7F44F00C8CDA4 /* Build configuration list for PBXNativeTarget "SessionTools-iOSTests" */;
 			buildPhases = (
-				A598BCE192FA16A7BBAAE21D /* [CP] Check Pods Manifest.lock */,
 				12F8274C21E7F44F00C8CDA4 /* Sources */,
 				12F8274D21E7F44F00C8CDA4 /* Frameworks */,
 				12F8274E21E7F44F00C8CDA4 /* Resources */,
+				125DD91A22F0EED500AFA88B /* Carthage Copy-Framework */,
 			);
 			buildRules = (
 			);
@@ -940,51 +862,42 @@
 					};
 					1278B54721EE7042001D1E58 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2UAV38D2MU;
 						ProvisioningStyle = Automatic;
 					};
 					12C9DE9421ED39F300233C1B = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2UAV38D2MU;
 						ProvisioningStyle = Automatic;
 					};
 					12C9DEA021ED39F500233C1B = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2UAV38D2MU;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					12C9DEBC21ED3C4D00233C1B = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2UAV38D2MU;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					12C9DED521ED3CB500233C1B = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2UAV38D2MU;
 						ProvisioningStyle = Automatic;
 					};
 					12C9DEEC21ED3D0600233C1B = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2UAV38D2MU;
 						ProvisioningStyle = Automatic;
 					};
 					12F8270C21E7E9E400C8CDA4 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2UAV38D2MU;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					12F8271821E7EA2200C8CDA4 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2UAV38D2MU;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					12F8274F21E7F44F00C8CDA4 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 2UAV38D2MU;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 12F8271821E7EA2200C8CDA4;
@@ -1102,239 +1015,105 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12D689FD22CFCC10918778C7 /* [CP] Check Pods Manifest.lock */ = {
+		125DD91A22F0EED500AFA88B /* Carthage Copy-Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+			);
+			name = "Carthage Copy-Framework";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SessionTools-macOS-checkManifestLockResult.txt",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KeychainAccess.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		23438A7020846AA35406921E /* [CP] Embed Pods Frameworks */ = {
+		125DD91B22F0EF1F00AFA88B /* Carthage Copy-Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess-macOS/KeychainAccess.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+			);
+			name = "Carthage Copy-Framework";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KeychainAccess.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-macOSExample/Pods-SessionTools-macOSExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		271D3D360AD3AAC3C87BCF4A /* [CP] Check Pods Manifest.lock */ = {
+		125DD91D22F0EFD800AFA88B /* Carthage Copy-Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/KeychainAccess.framework",
+			);
+			name = "Carthage Copy-Framework";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SessionTools-watchOS-checkManifestLockResult.txt",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KeychainAccess.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		3ED215E8CCF7CDCA3966D4D2 /* [CP] Check Pods Manifest.lock */ = {
+		125DD91E22F0F01F00AFA88B /* Carthage Copy-Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/KeychainAccess.framework",
+			);
+			name = "Carthage Copy-Framework";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SessionTools-watchOSExampleExtension-checkManifestLockResult.txt",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KeychainAccess.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		56F9B0BDCF21151128CAA119 /* [CP] Check Pods Manifest.lock */ = {
+		125DD91F22F0F05500AFA88B /* Carthage Copy-Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/KeychainAccess.framework",
+			);
+			name = "Carthage Copy-Framework";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SessionTools-tvOS-checkManifestLockResult.txt",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KeychainAccess.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		672A458DC4598506812A2A99 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SessionTools-iOSExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77883CA3DD4FC31EC9FF3144 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess-tvOS/KeychainAccess.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-tvOSExample/Pods-SessionTools-tvOSExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7AB60665C583CAF411B978D6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SessionTools-tvOSExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A598BCE192FA16A7BBAAE21D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SessionTools-iOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BAD61124A6781FC544FEC323 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess-iOS/KeychainAccess.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-iOSExample/Pods-SessionTools-iOSExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7D238C39DA6CEC71C69FDDF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SessionTools-macOSExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC516D35B02AD0C8413762B2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SessionTools-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FF9495DF433C8CC92360D42B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KeychainAccess-watchOS/KeychainAccess.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SessionTools-watchOSExampleExtension/Pods-SessionTools-watchOSExampleExtension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1547,7 +1326,6 @@
 /* Begin XCBuildConfiguration section */
 		1278B54121EE6FE7001D1E58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BADE7C19BF3927D941CEFE90 /* Pods-SessionTools-macOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1565,6 +1343,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/macOS/Info.plist";
@@ -1586,7 +1368,6 @@
 		};
 		1278B54221EE6FE7001D1E58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCC053638ECBBC2D76D57FBC /* Pods-SessionTools-macOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1603,6 +1384,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/macOS/Info.plist";
@@ -1622,7 +1407,6 @@
 		};
 		1278B55621EE7044001D1E58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 147F10ED15912A6860E15980 /* Pods-SessionTools-macOSExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1636,7 +1420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-macOSExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1653,7 +1437,6 @@
 		};
 		1278B55721EE7044001D1E58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61E0B7E63B266DAA02DA5759 /* Pods-SessionTools-macOSExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1666,7 +1449,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-macOSExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1692,7 +1475,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = SessionTools_watchOSExample_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-watchOSExample/Info.plist";
@@ -1721,7 +1504,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = SessionTools_watchOSExample_Extension;
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-watchOSExample/Info.plist";
@@ -1738,7 +1521,6 @@
 		};
 		12C9DEB221ED39F600233C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A53829E2325C896A660DE58 /* Pods-SessionTools-watchOSExampleExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1750,7 +1532,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-watchOSExampleExtension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1769,7 +1551,6 @@
 		};
 		12C9DEB321ED39F600233C1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D782AE0B1305D8BF3FD8654 /* Pods-SessionTools-watchOSExampleExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1780,7 +1561,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-watchOSExampleExtension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1797,7 +1578,6 @@
 		};
 		12C9DEC321ED3C4D00233C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A87EA5E80A6ECDB1FE8DBD8 /* Pods-SessionTools-watchOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1811,10 +1591,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1837,7 +1621,6 @@
 		};
 		12C9DEC421ED3C4D00233C1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB0AA47BC16246E376F7E8D6 /* Pods-SessionTools-watchOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1850,10 +1633,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1874,7 +1661,6 @@
 		};
 		12C9DEE021ED3CB500233C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E0605E0C9E1B903E3EFA9BF /* Pods-SessionTools-tvOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1887,10 +1673,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1913,7 +1703,6 @@
 		};
 		12C9DEE121ED3CB500233C1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFEB32850571978011754988 /* Pods-SessionTools-tvOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1925,10 +1714,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1949,7 +1742,6 @@
 		};
 		12C9DEFA21ED3D0700233C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BDF9C0429FFABD2A8337372 /* Pods-SessionTools-tvOSExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -1962,7 +1754,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-tvOSExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1980,7 +1772,6 @@
 		};
 		12C9DEFB21ED3D0700233C1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A237808C650D1C17A37BB0F6 /* Pods-SessionTools-tvOSExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
@@ -1992,7 +1783,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Examples/SessionTools-tvOSExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2008,7 +1799,6 @@
 		};
 		12F8271321E7E9E400C8CDA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB67B2E6ED1894133864AB4C /* Pods-SessionTools-iOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2022,10 +1812,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Sources/Supporting Files/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2046,7 +1840,6 @@
 		};
 		12F8271421E7E9E400C8CDA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E49D3627942B3299358EE63 /* Pods-SessionTools-iOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2059,10 +1852,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Sources/Supporting Files/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2081,7 +1878,6 @@
 		};
 		12F8272921E7EA2300C8CDA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8939C8A2B4B0B3B7C69CA04 /* Pods-SessionTools-iOSExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2093,7 +1889,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Examples/SessionTools-iOSExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2110,7 +1906,6 @@
 		};
 		12F8272A21E7EA2300C8CDA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D16F722E38D6FC8C6EE8C92 /* Pods-SessionTools-iOSExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2121,7 +1916,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Examples/SessionTools-iOSExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2136,7 +1931,6 @@
 		};
 		12F8275921E7F44F00C8CDA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E23A9820862F10A2A442E0A /* Pods-SessionTools-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2147,7 +1941,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2165,7 +1963,6 @@
 		};
 		12F8275A21E7F44F00C8CDA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEB471AFD961B3A3027E5B33 /* Pods-SessionTools-iOSTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -2175,7 +1972,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2UAV38D2MU;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

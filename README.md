@@ -2,6 +2,7 @@
 
 [![CI Status](http://img.shields.io/travis/BottleRocketStudios/iOS-SessionTools.svg?style=flat)](https://travis-ci.org/BottleRocketStudios/iOS-SessionTools)
 [![Version](https://img.shields.io/cocoapods/v/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
 [![Platform](https://img.shields.io/cocoapods/p/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
 [![codecov](https://codecov.io/gh/BottleRocketStudios/iOS-SessionTools/branch/master/graph/badge.svg)](https://codecov.io/gh/BottleRocketStudios/iOS-SessionTools)
@@ -168,7 +169,21 @@ Access the `userSessionState` property on the notification to easily get the sta
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, you'll first need to use [Carthage](https://github.com/Carthage/Carthage) to install SessionTool's dependency ([KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess).
+
+After [installing Carthage](https://github.com/Carthage/Carthage#installing-carthage), clone the repo:
+
+```bash
+git clone https://github.com/BottleRocketStudios/iOS-SessionTools.git
+```
+
+Next, use Carthage to install the dependencies:
+
+```bash
+carthage update
+```
+
+From here, you can open up `SessionTools.xcworkspace` and run the examples:
 
 ## Requirements
 
@@ -179,6 +194,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 * Swift 5.0
 
 ## Installation
+
+### CocoaPods
 
 SessionTools is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -192,6 +209,18 @@ Or if you're not working in an environment with access to the keychain, use the 
 ```ruby
 pod 'SessionTools/Base'
 ```
+
+### Carthage
+
+Add the following to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
+
+```
+github "BottleRocketStudios/iOS-SessionTools"
+```
+
+Run `carthage update` and follow the steps as described in Carthage's [README](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
+
+NOTE: Don't forget to add both `SessionTools.framework` and the `KeychainAccess.framework` dependency to your project if your environment has access to the keychain.
 
 ## Keychain Discussion
 

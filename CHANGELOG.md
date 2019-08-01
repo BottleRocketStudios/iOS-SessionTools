@@ -6,6 +6,10 @@
 [Tyler Milner](https://github.com/tylermilner)
 [#24](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/24)
 
+* Added Carthage support.
+[Ryan Gant](https://github.com/ganttastic)
+[#25](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/25)
+
 ##### Bug Fixes
 
 * None.
