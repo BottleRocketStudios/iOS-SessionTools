@@ -35,7 +35,7 @@ addons:
     - carthage
     - danger-swift
 before_install:
-  - carthage bootstrap --verbose --no-use-binaries --platform iOS,tvOS,watchOS --cache-builds
+  - carthage bootstrap --verbose --no-use-binaries --cache-builds
 script:
 - swiftlint
 - set -o pipefail
