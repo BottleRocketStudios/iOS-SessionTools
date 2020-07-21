@@ -195,6 +195,14 @@ From here, you can open up `SessionTools.xcworkspace` and run the examples:
 
 ## Installation
 
+### Swift Package Manager
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/BottleRocketStudios/iOS-SessionTools.git", from: "1.2.0")
+]
+```
+
 ### CocoaPods
 
 SessionTools is available through [CocoaPods](http://cocoapods.org). To install
