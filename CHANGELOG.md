@@ -2,6 +2,10 @@
 
 ##### Enhancements
 
+* Added Swift Package Manager support.
+[Wil Turner](https://github.com/WSTurner)
+[#23](https://github.com/BottleRocketStudios/iOS-SessionTools/issues/23)
+
 * Updated to Cocoapods 1.7.3, Xcode 10.2.1 recommended project settings updates, removed SwiftLint build phase run script (it gets run by Travis-CI), and updated KeychainAccess dependency from 3.1.2 to 3.2.0.
 [Tyler Milner](https://github.com/tylermilner)
 [#24](https://github.com/BottleRocketStudios/iOS-SessionTools/pull/24)
