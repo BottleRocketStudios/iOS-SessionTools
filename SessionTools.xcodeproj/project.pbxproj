@@ -289,6 +289,7 @@
 		6227E5D3206EECE0000A8620 /* KeychainStorageContainerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStorageContainerTests.swift; sourceTree = "<group>"; };
 		6227E5D5206EECE0000A8620 /* MockSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		6227E5D6206EECE0000A8620 /* UserSessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionTests.swift; sourceTree = "<group>"; };
+		A762F5C724C73CF300F8FC04 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -580,6 +581,7 @@
 			children = (
 				12F826EA21E7E98300C8CDA4 /* README.md */,
 				12F826F521E7E98300C8CDA4 /* CHANGELOG.md */,
+				A762F5C724C73CF300F8FC04 /* Package.swift */,
 				12F826DC21E7E98300C8CDA4 /* Examples */,
 				12F826EB21E7E98300C8CDA4 /* Sources */,
 				607FACE81AFB9204008FA782 /* Tests */,
