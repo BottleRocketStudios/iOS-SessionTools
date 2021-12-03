@@ -17,28 +17,24 @@ jobs:
         include:
             - name: "iOS"
               scheme: "SessionTools-iOS"
-              platform: "ios watchos"
               destination: "platform=iOS Simulator,OS=15.0,name=iPhone 12 Pro"
               test: true
               lint: true
 
             - name: "tvOS"
               scheme: "SessionTools-tvOS"
-              platform: "tvos"
               destination: "platform=tvOS Simulator,OS=15.0,name=Apple TV 4K"
               test: false
               lint: false
 
             - name: "watchOS"
               scheme: "SessionTools-watchOS"
-              platform: "watchos"
               destination: "platform=watchOS Simulator,OS=8.0,name=Apple Watch Series 6 - 44mm"
               test: false
               lint: false
 
             - name: "macOS"
               scheme: "SessionTools-macOS"
-              platform: "macos"
               destination: "arch=x86_64"
               test: false
               lint: false
@@ -56,7 +52,7 @@ jobs:
 
     - name: Dependencies
       if: steps.carthage-cache.outputs.cache-hit != 'true'
-      run: carthage bootstrap --use-xcframeworks --no-use-binaries --platform ${{ matrix.platform }}  --cache-builds --verbose
+      run: carthage bootstrap --use-xcframeworks --no-use-binaries --cache-builds --verbose
 
     - name: Build and Test
       run: >
