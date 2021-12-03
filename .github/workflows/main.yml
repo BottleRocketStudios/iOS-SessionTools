@@ -45,13 +45,13 @@ jobs:
 
     - name: Cache
       uses: actions/cache@v1
-      id: carthage-cache
+      id: dependency-cache
       with:
         path: Carthage
         key: ${{ runner.os }}-carthage-${{ hashFiles('**/Cartfile.resolved') }}
 
     - name: Dependencies
-      if: steps.carthage-cache.outputs.cache-hit != 'true'
+      if: steps.dependency-cache.outputs.cache-hit != 'true'
       run: carthage bootstrap --use-xcframeworks --no-use-binaries --cache-builds --verbose
 
     - name: Build and Test
