@@ -1,6 +1,6 @@
 # SessionTools
 
-[![CI Status](http://img.shields.io/travis/BottleRocketStudios/iOS-SessionTools.svg?style=flat)](https://travis-ci.org/BottleRocketStudios/iOS-SessionTools)
+![CI Status](https://github.com/BottleRocketStudios/iOS-SessionTools/actions/workflows/main.yml/badge.svg)
 [![Version](https://img.shields.io/cocoapods/v/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
@@ -44,7 +44,7 @@ struct Model: Codable {
 
 ##### 2. Create a `KeychainContainerConfig` supplied with a `keychainName`.
 
-The default container configuration uses an unmanaged keychain container. This means the framework will make no attempt to remove the session's data on your behalf and you will be responsible for removing this session's data by calling `Session.deleteItem()` when needed. Because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychain-discussion) 
+The default container configuration uses an unmanaged keychain container. This means the framework will make no attempt to remove the session's data on your behalf and you will be responsible for removing this session's data by calling `Session.deleteItem()` when needed. Because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychain-discussion)
 
 ``` swift
 let config = KeychainContainerConfig(keychainName: "your.keychain.name")
@@ -52,13 +52,13 @@ let config = KeychainContainerConfig(keychainName: "your.keychain.name")
 
 If you only want the session's data to persist for the current installation, instantiate your `KeychainContainerConfig` with lifecycle `KeychainLifecycle.currentInstall()` and pass in an installation identifier. This identifier should remain stable for the current installation but change between installations.
 
-This installation indentifier is prepended to the keychain name before running keychain operations. Because the identifier changes between installations the previous key will no longer match. You could theoretically still get that key back if you reuse a previous installation identifier, but because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychain-discussion) 
+This installation indentifier is prepended to the keychain name before running keychain operations. Because the identifier changes between installations the previous key will no longer match. You could theoretically still get that key back if you reuse a previous installation identifier, but because of differences between OS versions, we cannot make any guarantees on how long the data will persist in the keychain beyond the current install. For more discussion, see [below.](#keychain-discussion)
 
 ``` swift
 let managedConfig = KeychainContainerConfig(keychainName: "com.app.name", lifecycle: .currentInstall(identifier: installationIdentifier))
 ```
 
-##### 3. Create a `KeychainStorageContainer` supplied with your `KeychainContainerConfig`. 
+##### 3. Create a `KeychainStorageContainer` supplied with your `KeychainContainerConfig`.
 ``` swift
 let container = KeychainStorageContainer<Model>(config: config)
 ```
@@ -68,15 +68,15 @@ struct MyStorageContainer: SessionContainer {
     func hasItem(forIdentifier identifier: String) -> Bool {
         // ...
     }
-    
+
     func item(forIdentifier identifier: String, jsonDecoder: JSONDecoder) throws -> Item? {
         // ...
     }
-    
+
     func removeItem(forIdentifier identifier: String) throws {
         // ...
     }
-    
+
     func storeItem(_ item: Item, forIdentifier identifier: String, jsonEncoder: JSONEncoder) throws {
         // ...
     }
@@ -154,7 +154,7 @@ Access the `userSessionState` property on the notification to easily get the sta
 ``` swift
 @objc private func didUpdateUser(_ notification: Notification) {
     guard let sessionState = notification.userSessionState else { return }
-    
+
     // Do something with the state
     switch sessionState {
     case .loggedIn:
