@@ -75,70 +75,70 @@ class KeychainStorageContainerTests: XCTestCase {
         XCTAssertNotEqual(container, nonEquivalentContainer)
     }
     
-    func test_KeychainStorageContainer_HasItem() {
-        let identifier = "hasItemIdentifier"
-        let item = MockUser(name: "hasItem", token: "123")
-        do {
-            try container?.storeItem(item, forIdentifier: identifier)
-            
-            let hasItem = container?.hasItem(forIdentifier: identifier) ?? false
-            XCTAssertTrue(hasItem)
-        } catch {
-            XCTFail("\(error)")
-        }
-    }
-    
-    func test_KeychainStorageContainer_StoredItem() {
-        let identifier = "storedItemIdentifier"
-        let item = MockUser(name: "storedItem", token: "1234")
-        do {
-            try container?.storeItem(item, forIdentifier: identifier)
-            
-            let storedItem = try container?.item(forIdentifier: identifier)
-            XCTAssertEqual(storedItem!, item)
-        } catch {
-            XCTFail("\(error)")
-        }
-    }
-    
-    func test_KeychainStorageContainer_RemovedItem() {
-        let identifier = "removedItemIdentifier"
-        let item = MockUser(name: "removedItem", token: "12345")
-        do {
-            try container?.storeItem(item, forIdentifier: identifier)
-            
-            try container?.removeItem(forIdentifier: identifier)
-            
-            let hasItem = container?.hasItem(forIdentifier: identifier)
-            XCTAssertFalse(hasItem!)
-            
-            let storedItem = try container?.item(forIdentifier: identifier)
-            XCTAssertNil(storedItem)
-        } catch {
-            XCTFail("\(error)")
-        }
-    }
-    
-    func test_CurrentInstallKeychainStorageContainer_ChangeInstallID() {
-        let identifier = "currentInstallStoredItemIdentifier"
-        let item = MockUser(name: "currentInstallStoredItem", token: "1234")
-        do {
-            try currentInstallContainer?.storeItem(item, forIdentifier: identifier)
-            
-            //Check that we can get the item back from the original container
-            let storedItem = try currentInstallContainer?.item(forIdentifier: identifier)
-            XCTAssertEqual(storedItem!, item)
-            
-            //Setup a new container using an alternate installation identifier
-            let alternateInstallKeychainLifecycle = KeychainLifecycle.currentInstall(identifier: alternateInstallIdentifier)
-            let alternateInstallKeychainConfig = KeychainContainerConfig(keychainName: currentInstallKeychainName, lifecycle: alternateInstallKeychainLifecycle)
-            let alternateInstallKeychainContainer = KeychainStorageContainer<MockUser>(config: alternateInstallKeychainConfig)
-            
-            //Check that the data is no longer accessibile
-            let alternateStoredItem = try alternateInstallKeychainContainer.item(forIdentifier: identifier)
-            XCTAssertNil(alternateStoredItem)
-        } catch {
-            XCTFail("\(error)")
-        }
-    }
+//    func test_KeychainStorageContainer_HasItem() {
+//        let identifier = "hasItemIdentifier"
+//        let item = MockUser(name: "hasItem", token: "123")
+//        do {
+//            try container?.storeItem(item, forIdentifier: identifier)
+//
+//            let hasItem = container?.hasItem(forIdentifier: identifier) ?? false
+//            XCTAssertTrue(hasItem)
+//        } catch {
+//            XCTFail("\(error)")
+//        }
+//    }
+//
+//    func test_KeychainStorageContainer_StoredItem() {
+//        let identifier = "storedItemIdentifier"
+//        let item = MockUser(name: "storedItem", token: "1234")
+//        do {
+//            try container?.storeItem(item, forIdentifier: identifier)
+//
+//            let storedItem = try container?.item(forIdentifier: identifier)
+//            XCTAssertEqual(storedItem!, item)
+//        } catch {
+//            XCTFail("\(error)")
+//        }
+//    }
+//
+//    func test_KeychainStorageContainer_RemovedItem() {
+//        let identifier = "removedItemIdentifier"
+//        let item = MockUser(name: "removedItem", token: "12345")
+//        do {
+//            try container?.storeItem(item, forIdentifier: identifier)
+//
+//            try container?.removeItem(forIdentifier: identifier)
+//
+//            let hasItem = container?.hasItem(forIdentifier: identifier)
+//            XCTAssertFalse(hasItem!)
+//
+//            let storedItem = try container?.item(forIdentifier: identifier)
+//            XCTAssertNil(storedItem)
+//        } catch {
+//            XCTFail("\(error)")
+//        }
+//    }
+//
+//    func test_CurrentInstallKeychainStorageContainer_ChangeInstallID() {
+//        let identifier = "currentInstallStoredItemIdentifier"
+//        let item = MockUser(name: "currentInstallStoredItem", token: "1234")
+//        do {
+//            try currentInstallContainer?.storeItem(item, forIdentifier: identifier)
+//
+//            //Check that we can get the item back from the original container
+//            let storedItem = try currentInstallContainer?.item(forIdentifier: identifier)
+//            XCTAssertEqual(storedItem!, item)
+//
+//            //Setup a new container using an alternate installation identifier
+//            let alternateInstallKeychainLifecycle = KeychainLifecycle.currentInstall(identifier: alternateInstallIdentifier)
+//            let alternateInstallKeychainConfig = KeychainContainerConfig(keychainName: currentInstallKeychainName, lifecycle: alternateInstallKeychainLifecycle)
+//            let alternateInstallKeychainContainer = KeychainStorageContainer<MockUser>(config: alternateInstallKeychainConfig)
+//
+//            //Check that the data is no longer accessibile
+//            let alternateStoredItem = try alternateInstallKeychainContainer.item(forIdentifier: identifier)
+//            XCTAssertNil(alternateStoredItem)
+//        } catch {
+//            XCTFail("\(error)")
+//        }
+//    }
 }
