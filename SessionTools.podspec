@@ -21,20 +21,20 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/bottlerocketstudios/iOS-SessionTools.git', :tag => s.version.to_s }
     s.default_subspec = 'KeychainStorage'
 
-    s.swift_version = '5.0'
+    s.swift_version = '5.5'
     s.ios.deployment_target = '9.0'
     s.watchos.deployment_target = '2.0'
     s.tvos.deployment_target = '9.0'
-    s.macos.deployment_target = '10.9'
+    s.macos.deployment_target = '10.10'
     s.frameworks = 'Foundation'
 
     s.subspec 'Base' do |base|
         # subspec for users who don't want to use Keychain for storage
-        base.source_files = 'Sources/SessionTools/Base/*'
+        base.source_files = 'SessionTools/Sources/SessionTools/Base/*'
     end
 
     s.subspec 'KeychainStorage' do |keychain|
         keychain.dependency 'KeychainAccess'
-        s.source_files = 'Sources/SessionTools/Base/*', 'Sources/SessionTools/KeychainStorage/*'
+        s.source_files = 'SessionTools/Sources/SessionTools/Base/*', 'SessionTools/Sources/SessionTools/KeychainStorage/*'
     end
 end
