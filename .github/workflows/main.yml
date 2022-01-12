@@ -49,7 +49,7 @@ jobs:
       id: dependency-cache
       with:
         path: Carthage
-        key: ${{ runner.os }}-dependencies-${{ hashFiles('**/Cartfile.resolved') }}
+        key: ${{ runner.os }}dependencies-xcode-13.2-${{ hashFiles('**/Cartfile.resolved') }}
 
     - name: Dependencies
       if: steps.dependency-cache.outputs.cache-hit != 'true'

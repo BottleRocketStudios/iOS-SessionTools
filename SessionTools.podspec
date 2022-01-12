@@ -30,11 +30,11 @@ Pod::Spec.new do |s|
 
     s.subspec 'Base' do |base|
         # subspec for users who don't want to use Keychain for storage
-        base.source_files = 'SessionTools/Sources/SessionTools/Base/*'
+        base.source_files = 'Sources/Core/*'
     end
 
     s.subspec 'KeychainStorage' do |keychain|
         keychain.dependency 'KeychainAccess'
-        s.source_files = 'SessionTools/Sources/SessionTools/Base/*', 'SessionTools/Sources/SessionTools/KeychainStorage/*'
+        s.source_files = 'Sources/Core/*', 'Sources/KeychainStorage/*'
     end
 end
