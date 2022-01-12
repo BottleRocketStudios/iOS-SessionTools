@@ -1,6 +1,6 @@
 //
 //  SessionManager.swift
-//  SessionTools_Example
+//  Example
 //
 //  Copyright (c) 2018 Bottle Rocket Studios. All rights reserved.
 //

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SessionTools_Example
+//  Example
 //
 //  Copyright © 2018 Bottle Rocket Studios. All rights reserved.
 //

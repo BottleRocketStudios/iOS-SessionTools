@@ -2,7 +2,6 @@
 //  SessionTools.h
 //  SessionTools
 //
-//  Created by Will McGinty on 1/12/22.
 //
 
 #import <Foundation/Foundation.h>

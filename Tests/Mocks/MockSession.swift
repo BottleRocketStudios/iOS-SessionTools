@@ -1,6 +1,6 @@
 //
 //  MockSession.swift
-//  SessionTools_Tests
+//  Tests
 //
 //  Copyright © 2018 Bottle Rocket Studios. All rights reserved.
 //

@@ -1,6 +1,6 @@
 //
 //  MockStorageContainer.swift
-//  SessionTools-iOSTests
+//  Tests
 //
 //  Copyright © 2018 Bottle Rocket Studios. All rights reserved.
 //

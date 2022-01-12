@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SessionTools-tvOSExample
+//  Example
 //
 //  Copyright (c) 2019 Bottle Rocket Studios. All rights reserved.
 //

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SessionTools-macOSExample
+//  Example
 //
 //  Copyright (c) 2019 Bottle Rocket Studios. All rights reserved.
 //
