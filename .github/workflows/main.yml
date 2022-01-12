@@ -9,6 +9,7 @@ jobs:
   Build:
     runs-on: macos-11
     env:
+      DEVELOPER_DIR: /Applications/Xcode_13.2.app/Contents/Developer
       workspace: "SessionTools.xcworkspace"
     strategy:
       fail-fast: false
@@ -16,27 +17,27 @@ jobs:
         name: ["iOS", "tvOS", "watchOS", "macOS"]
         include:
             - name: "iOS"
-              scheme: "SessionTools-iOS"
-              destination: "platform=iOS Simulator,OS=15.0,name=iPhone 12 Pro"
+              scheme: "SessionTools iOS"
+              destination: "platform=iOS Simulator,OS=15.2,name=iPhone 12 Pro"
               test: true
               lint: true
 
             - name: "tvOS"
-              scheme: "SessionTools-tvOS"
-              destination: "platform=tvOS Simulator,OS=15.0,name=Apple TV 4K"
+              scheme: "SessionTools tvOS"
+              destination: "platform=tvOS Simulator,OS=15.2,name=Apple TV 4K"
               test: false
               lint: false
 
             - name: "watchOS"
-              scheme: "SessionTools-watchOS"
-              destination: "platform=watchOS Simulator,OS=8.0,name=Apple Watch Series 6 - 44mm"
+              scheme: "SessionTools watchOS"
+              destination: "platform=watchOS Simulator,OS=8.2,name=Apple Watch Series 6 - 44mm"
               test: false
               lint: false
 
             - name: "macOS"
-              scheme: "SessionTools-macOS"
+              scheme: "SessionTools macOS"
               destination: "arch=x86_64"
-              test: false
+              test: true
               lint: false
 
     steps:

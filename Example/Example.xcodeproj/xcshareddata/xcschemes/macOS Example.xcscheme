@@ -17,7 +17,7 @@
                BlueprintIdentifier = "1278B54721EE7042001D1E58"
                BuildableName = "macOS Example.app"
                BlueprintName = "macOS Example"
-               ReferencedContainer = "container:SessionTools.xcodeproj">
+               ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "1278B54721EE7042001D1E58"
             BuildableName = "macOS Example.app"
             BlueprintName = "macOS Example"
-            ReferencedContainer = "container:SessionTools.xcodeproj">
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "1278B54721EE7042001D1E58"
             BuildableName = "macOS Example.app"
             BlueprintName = "macOS Example"
-            ReferencedContainer = "container:SessionTools.xcodeproj">
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

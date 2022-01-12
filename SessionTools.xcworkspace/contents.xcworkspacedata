@@ -2,22 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:README.md">
+      location = "group:SessionTools.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CHANGELOG.md">
-   </FileRef>
-   <FileRef
-      location = "group:SessionTools.podspec">
-   </FileRef>
-   <Group
-      location = "group:Example"
-      name = "Example">
-      <FileRef
-         location = "group:SessionTools.xcodeproj">
-      </FileRef>
-   </Group>
-   <FileRef
-      location = "group:SessionTools">
+      location = "group:Example/Example.xcodeproj">
    </FileRef>
 </Workspace>
