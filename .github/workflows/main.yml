@@ -25,7 +25,7 @@ jobs:
             - name: "tvOS"
               scheme: "SessionTools tvOS"
               destination: "platform=tvOS Simulator,OS=15.2,name=Apple TV 4K"
-              test: false
+              test: true
               lint: false
 
             - name: "watchOS"
