@@ -2,6 +2,17 @@
 
 ##### Enhancements
 
+* None
+
+##### Bug Fixes
+
+* None.
+
+
+## 1.3.0 (2022-01-14)
+
+##### Enhancements
+
 * Added Swift Package Manager support.
 [Wil Turner](https://github.com/WSTurner)
 [#23](https://github.com/BottleRocketStudios/iOS-SessionTools/issues/23)
