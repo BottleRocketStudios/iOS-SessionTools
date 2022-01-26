@@ -1,6 +1,6 @@
 //
 //  MockNotificationPoster.swift
-//  SessionTools_Example
+//  Tests
 //
 //  Copyright (c) 2019 Bottle Rocket Studios. All rights reserved.
 //
