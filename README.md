@@ -6,7 +6,6 @@
 [![License](https://img.shields.io/cocoapods/l/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
 [![Platform](https://img.shields.io/cocoapods/p/SessionTools.svg?style=flat)](http://cocoapods.org/pods/SessionTools)
 [![codecov](https://codecov.io/gh/BottleRocketStudios/iOS-SessionTools/branch/master/graph/badge.svg)](https://codecov.io/gh/BottleRocketStudios/iOS-SessionTools)
-[![codebeat badge](https://codebeat.co/badges/296d63cb-ed54-4fae-bedb-65562b6b08d6)](https://codebeat.co/projects/github-com-bottlerocketstudios-ios-sessiontools-master)
 
 ## Purpose
 This library makes session management easier. There are a few main goals:
